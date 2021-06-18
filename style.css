@@ -214,3 +214,26 @@ body{
 .colored_titles div:hover{
     transform: scale(1.2);
 }
+
+.section_6{
+    background: url('./images/section_2_picture.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+
+.blueBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10%;
+    background-color: #B2CECF;
+    opacity: 90%;
+    margin-bottom: 40px;
+}
+
+.blueBox h2 {
+    color: white;
+}
