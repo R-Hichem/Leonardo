@@ -19,11 +19,23 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
+    
+<div class="topnav" id="myTopnav">
+  <a href="#section_1" class="active">Section 1</a>
+  <a href="#section_2">Section 2</a>
+  <a href="#section_3">Section 3</a>
+  <a href="#section_4">Section 4</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
     <div id="fullpage">
       <div class="section section_1">
-        <div class="section_1_bottom">
+        <!-- <div class="section_1_bottom">
           <div style="width: 50%">
             <h1 class="title_small" style="text-align: right">
               UNLOCK YOUR HUMAN POTENTIAL !
@@ -33,7 +45,11 @@
             A SIMPLE RESEARCH-BASED TOOL TO HELP YOU MEASURE THE STRENGTHS OF
             YOUR TEAM AND AREAS FOR DEVELOPMENT BASED ON HUMAN TALENT
           </h1>
-        </div>
+        </div> -->
+        <h1 style="width: 70%; font-size: 2vw;">
+          A SIMPLE RESEARCH-BASED TOOL TO HELP YOU MEASURE THE STRENGTHS OF
+          YOUR TEAM AND AREAS FOR DEVELOPMENT BASED ON HUMAN TALENT
+        </h1>
       </div>
       <div class="section section_2">
         <div class="vertical_half">
@@ -74,7 +90,7 @@
         </div>
         <div class="vertical_half" style="display: flex; justify-content: center; align-items: center;">
           <!-- <div class="section_3_image"></div> -->
-          <img src="/images/section_2_picture.jpg" height="60%">
+          <img src="./images/section_2_picture.jpg" height="60%">
         </div>
       </div>
 
@@ -120,10 +136,25 @@
     <script>
       new fullpage("#fullpage", {
         //options here
-        autoScrolling: true,
+        //autoScrolling: true,
         scrollHorizontally: true,
         verticalCentered: false,
+        anchors:['section_1', 'section_2', 'section_3', 'section_4']
       });
+
+      function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+document.querySelectorAll('#myTopnav a').forEach( link => link.addEventListener("click", e => {
+  document.querySelector('a.active').classList.toggle('active');
+  e.target.classList.toggle('active');
+}) )
     </script>
   </body>
 </html>
