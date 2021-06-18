@@ -180,3 +180,37 @@ body{
       align-items: center;
       height: 100%;
   }
+
+  .colored_titles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    text-align: center;
+    color: white;
+    font-size: 1.2vw;
+}
+
+.section_white {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleparagraph {
+    font-size: 1.8vw;
+}
+.paragraphs {
+    font-size: 1.4vw;
+    text-align: center;
+}
+
+.colored_titles div{
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.colored_titles div:hover{
+    transform: scale(1.2);
+}
