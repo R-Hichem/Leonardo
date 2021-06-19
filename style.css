@@ -243,6 +243,12 @@ body{
     font-size: 2.5vw; margin-top: 10px; font-weight: 500
 }
 
+.section_3_right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media only screen and (max-width: 992px) {
     .responsive_text{
         font-size: 3vw;
@@ -268,6 +274,18 @@ body{
         margin: 10px auto;
         font-size: 2.2vw;
     }
+
+    .section_5, .section_3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .section_3_right{
+        display: none;
+    }
+
+    
 }
 
 @media only screen and (max-width: 768px) {
