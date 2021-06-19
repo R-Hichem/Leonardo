@@ -237,3 +237,30 @@ body{
 .blueBox h2 {
     color: white;
 }
+
+.responsive_text{
+    font-size: 2.5vw; margin-top: 10px; font-weight: 500
+}
+
+@media only screen and (max-width: 992px) {
+    .responsive_text{
+        font-size: 3vw;
+    }
+
+    .section_2_image{
+       display: none;
+    }
+
+    .section_2 {
+        flex-direction: column;
+    }
+    .vertical_half{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    
+
+    
+}
