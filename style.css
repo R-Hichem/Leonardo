@@ -249,13 +249,24 @@ body{
     align-items: center;
 }
 
+.section_3_p{
+    font-size: 2.5vw;
+    line-height: 200%;
+    font-weight: 500;
+}
+
 @media only screen and (max-width: 992px) {
     .responsive_text{
         font-size: 3vw;
     }
 
-    .section_2_image, .section_3_image{
+    .section_2_image{
        display: none;
+    }
+
+    .section_3_image{
+        height: 40vh;
+        width: auto;
     }
 
     .section_2, .section_3 {
@@ -282,7 +293,8 @@ body{
     }
 
     .section_3_right{
-        display: none;
+        padding-top: 0;
+        /* display: none; */
     }
 
     
@@ -332,5 +344,9 @@ body{
     }
     .section_6{
         justify-content: center;
+    }
+
+    .section_3_p{
+        font-size: 3.5vw;
     }
 }
