@@ -118,6 +118,8 @@ body{
     width: 100%;
     z-index: 1000;
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
   }
   
   .topnav a {
@@ -240,7 +242,11 @@ body{
 }
 
 .responsive_text{
-    font-size: 2.5vw; margin-top: 10px; font-weight: 500
+    font-size: 2.2vw; margin-top: 10px; font-weight: 500
+}
+
+.responsive_text_small{
+    font-size: 1.8vw;
 }
 
 .section_3_right{
@@ -349,4 +355,11 @@ body{
     .section_3_p{
         font-size: 3.5vw;
     }
+}
+
+.center_all{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
