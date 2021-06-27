@@ -49,7 +49,7 @@ body{
 
 .section_2_image{
     width: 45vw;
-    height: 70vh;
+    height: 65vh;
     border-radius: 60px 0 60px 0;
 }
 
@@ -78,7 +78,7 @@ body{
 }
 
 .section_4_cards{
-    padding-top: 80px;
+    padding-top: 35px;
     display: flex;
     justify-content: space-evenly;
 }
@@ -208,6 +208,10 @@ body{
     text-align: center;
 }
 
+.paragraphs p {
+    margin: 12px auto;
+}
+
 .colored_titles div{
     cursor: pointer;
     transition: transform .2s;
@@ -242,11 +246,13 @@ body{
 }
 
 .responsive_text{
-    font-size: 2.2vw; margin-top: 10px; font-weight: 500
+    font-size: 2.2vw; margin-top: 10px; font-weight: 500;
+    text-align: justify;
 }
 
 .responsive_text_small{
-    font-size: 1.8vw;
+    font-size: 1.6vw;
+    text-align: justify;
 }
 
 .section_3_right{
@@ -257,8 +263,8 @@ body{
 
 .section_3_p{
     font-size: 2.5vw;
-    line-height: 200%;
     font-weight: 500;
+    text-align: justify;
 }
 
 @media only screen and (max-width: 992px) {
@@ -324,7 +330,13 @@ body{
 }
 
 @media only screen and (max-width: 600px) {
+    .section_1{
+        background: none;
+        background-color: #B2CECF;
+    }
+
     
+
     .section_4_cards{
         flex-direction: column;
         align-items: center;
@@ -362,4 +374,22 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.vertical_center{
+    align-self: center;
+}
+
+.section_1_mobile{
+    opacity: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    transition: all 5s;
+}
+
+.visible{
+    opacity: 1;
 }
