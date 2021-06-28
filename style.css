@@ -53,7 +53,7 @@ body{
     border-radius: 60px 0 60px 0;
 }
 
-.section_3{
+.section_3, .section_3_bis{
     display: flex;
     justify-content: center;
     background-color: #FFF;
@@ -281,7 +281,7 @@ body{
         width: auto;
     }
 
-    .section_2, .section_3 {
+    .section_2, .section_3, .section_3_bis{
         flex-direction: column;
     }
     .vertical_half{
@@ -298,7 +298,7 @@ body{
         font-size: 2.2vw;
     }
 
-    .section_5, .section_3{
+    .section_5, .section_3, .section_3_bis{
         display: flex;
         flex-direction: column;
         justify-content: center;
