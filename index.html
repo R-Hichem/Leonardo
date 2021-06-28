@@ -33,9 +33,9 @@
   </head>
   <body>
     <div class="topnav" id="myTopnav">
-      <a> <img src="./images/logo.jpg"  style="height: 25px; ">  </a>
+      <a> <img src="./images/logo.jpg" style="height: 60px" /> </a>
       <a href="index.html" id="link_to_1" class="active">Home Page</a>
-      <a href="leonardo.html" id="link_to_2" >Leonardo The Tool</a>
+      <a href="leonardo.html" id="link_to_2">Leonardo The Tool</a>
       <a href="#" id="link_to_3">Our Solution</a>
       <!-- <a href="#section_4" id="link_to_4">Services</a>
       <a href="#section_5" id="link_to_5">About Leonardo</a>
@@ -62,9 +62,13 @@
           A SIMPLE RESEARCH-BASED TOOL TO HELP YOU MEASURE THE STRENGTHS OF YOUR
           TEAM AND AREAS FOR DEVELOPMENT BASED ON HUMAN TALENT
         </h1> -->
+
+        <div class="section_1_mobile">
+          <h1>Développez les valeurs individuelles et celles de vos équipes</h1>
+        </div>
       </div>
       <div class="section section_2">
-        <div class="vertical_half">
+        <div class="vertical_half vertical_center">
           <h2 class="title_small" style="font-size: 4vw; font-style: bold">
             Where are you now?
           </h2>
@@ -89,7 +93,7 @@
       </div>
 
       <div class="section section_3">
-        <div class="vertical_half section_3_left">
+        <div class="vertical_half section_3_left vertical_center">
           <h2 class="title_small" style="font-size: 4vw; font-style: bold">
             Why Leonardo 3.4.5?
           </h2>
@@ -100,9 +104,7 @@
             innovative ideas, assisting you to keep your competitive edge.
           </p>
         </div>
-        <div
-          class="vertical_half right section_3_right"
-        >
+        <div class="vertical_half right section_3_right">
           <img src="./images/leonardo.png" class="section_3_image" />
         </div>
       </div>
@@ -148,7 +150,12 @@
         <div class="" style="padding-top: 50px">
           <h2
             class="title_small"
-            style="font-size: 3.5vw; font-style: bold; margin: 0 10px"
+            style="
+              font-size: 3.5vw;
+              font-style: bold;
+              margin-top: 40px;
+              margin-bottom: 0;
+            "
           >
             What makes Leonardo 3.4.5 different from other tools?
           </h2>
@@ -211,18 +218,10 @@
             ARE YOU LOOKING FOR AN OPEN MANAGEMENT APPROACH TO SUPPORT YOUR
             TEAMS DURING PERIODS OF CHANGE AND GROWTH?
           </h1>
-          <h2>
-            Then contact us today
-          </h2>
-          <h2>
-            Tel: xxxxxxx E-mail: xxxxxx
-          </h2>
-          <h2>
-            and let’s talk about how Leonardo 3.4.5
-          </h2>
-          <h2>
-            can help you leverage the hidden resources of your teams!
-          </h2>
+          <h2>Then contact us today</h2>
+          <h2>Tel: xxxxxxx E-mail: xxxxxx</h2>
+          <h2>and let’s talk about how Leonardo 3.4.5</h2>
+          <h2>can help you leverage the hidden resources of your teams!</h2>
         </div>
       </div>
     </div>
@@ -234,10 +233,10 @@
     ></script>
 
     <script>
-      screen.orientation.lock("portrait");
       new fullpage("#fullpage", {
         //options here
         //autoScrolling: true,
+        loopBottom: true,
         scrollHorizontally: true,
         verticalCentered: false,
         anchors: [
@@ -280,6 +279,23 @@
       //     e.target.classList.toggle("active");
       //   })
       // );
+
+      window.addEventListener("resize", () => {
+        mobileText = document.querySelector(".section_1_mobile");
+
+        if (window.screen.availWidth <= 600) {
+          mobileText.classList.add("visible");
+        } else {
+          mobileText.classList.remove("visible");
+        }
+      });
+
+      document.querySelector("body").onload =
+        window.screen.availWidth <= 600
+          ? document.querySelector(".section_1_mobile").classList.add("visible")
+          : null;
+
+      
     </script>
   </body>
 </html>
