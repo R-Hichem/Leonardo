@@ -1,0 +1,813 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Mexpro || Template Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+    .added1 {	background-color: #336600;
+	color: #FFFFFF;
+}
+    </style>
+
+	<!-- Syntax Highlighter -->
+	<link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shCore.css" media="all">
+	<link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shThemeDefault.css" media="all">
+</head>
+
+
+<body>
+	<div class="container">
+
+		<h3 class="center alt">&ldquo;Mexpro&rdquo; Documentation by &ldquo;ThemeEaster&rdquo; v1.0</h3>
+
+		<hr>
+
+		<h1 class="center">&ldquo;Mexpro&rdquo;</h1>
+
+        <div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+			  <p class="prepend-top">
+<strong>
+					Created: 02/06/2021<br>
+				By: <a href="http://www.dynamiclayers.net">ThemeEaster</a><br>
+				<br>
+			    </strong><strong><br>
+		        </strong></p>
+    </div><!-- end div .span-6 -->
+
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing our theme. If you have any questions that are beyond the scope of this help file, please contact our support. Thanks so much!</p>
+	</div>
+	  </div><!-- end div .borderTop -->
+
+		<hr>
+
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#htmlStructure">HTML Structure</a></li>
+			<li><a href="#temp-components">Template Components</a></li>
+			<li><a href="#cssFiles">CSS Files and Structure</a></li>
+			<li><a href="#javascript">JavaScript</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+			<li><a href="#php">PHP Code Explanation</a> <em class="quiet small">(If your theme uses PHP)</em></li>
+		</ol>
+
+		<hr>
+
+		<h3 id="htmlStructure"><strong>A) HTML Structure</strong> - <a href="#toc">top</a></h3>
+		<p>Below is the general HTML structure of the landing page.<br>
+		</p>
+
+	  <h4 id="front-html-structures"><strong>1) index.html File Structure</strong> - <a href="#toc">top</a></h4>
+
+      <p>The template page's layout consist of top that show the logo and main menu, hero section  that show background image, beforecontent that show some amaizing content,  about section contain about your some info & feature, service section contained all services, work section you can showcase your portfolio with awesome animation, skills section here you can add some skills, team section is for your team members, testimonial section here you can published your customer reviews, call to action this for call to action content, contact section here you can put your contact information & footer that show copyright information.</p>
+
+<pre class="brush: html;" id="front-html-structure-pre">
+&lt;!doctype html>
+&lt;!--[if lt IE 7]>      &lt;html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> &lt;![endif]-->
+&lt;!--[if IE 7]>         &lt;html class="no-js lt-ie9 lt-ie8" lang=""> &lt;![endif]-->
+&lt;!--[if IE 8]>         &lt;html class="no-js lt-ie9" lang=""> &lt;![endif]-->
+&lt;!--[if gt IE 8]>&lt;!--> &lt;html class="no-js" lang="en"> &lt;!--&lt;![endif]-->
+    &lt;head>
+        &lt;meta charset="utf-8">
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1">
+		&lt;meta name="description" content="Multipurpose Business HTML Template">
+        &lt;meta name="author" content="ThemeEaster">
+       
+        &lt;title>Mexpro | Multipurpose Business HTML Template&lt;/title>
+        
+		&lt;link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+		
+        &lt;link rel="stylesheet" href="assets/css/fontawesome.min.css">
+        &lt;link rel="stylesheet" href="assets/css/line-awesome.min.css">
+        &lt;link rel="stylesheet" href="assets/css/business-icon.css">
+        &lt;link rel="stylesheet" href="assets/css/animate.min.css">
+        &lt;link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        &lt;link rel="stylesheet" href="assets/css/slick.min.css">
+        &lt;link rel="stylesheet" href="assets/css/venobox.min.css">
+        &lt;link rel="stylesheet" href="assets/css/odometer.min.css">
+        &lt;link rel="stylesheet" href="assets/css/nice-select.css">
+        &lt;link rel="stylesheet" href="assets/css/splitting-cells.css">
+        &lt;link rel="stylesheet" href="assets/css/splitting.css">
+        &lt;link rel="stylesheet" href="assets/css/keyframe-animation.css">
+        &lt;link rel="stylesheet" href="assets/css/slider.css">
+        &lt;link rel="stylesheet" href="assets/css/header.css">
+        &lt;link rel="stylesheet" href="assets/css/footer.css">
+        &lt;link rel="stylesheet" href="assets/css/main.css">
+        &lt;link rel="stylesheet" href="assets/css/responsive.css">
+
+        &lt;script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js">&lt;/script>
+        
+    &lt;/head>
+    
+    &lt;body class="header-1 business">
+        &lt;!--[if lt IE 8]>
+            &lt;p class="browserupgrade">You are using an &lt;strong>outdated&lt;/strong> browser. Please &lt;a href="http://browsehappy.com/">upgrade your browser&lt;/a> to improve your experience.&lt;/p>
+        &lt;![endif]-->
+        
+        &lt;div class="site-preloader-wrap">
+            &lt;div class="spinner">&lt;/div>
+        &lt;/div>&lt;!-- /.site-preloader-wrap -->
+        
+        &lt;header class="header header-one">
+            
+        &lt;/header>&lt;!-- /.header-one -->
+
+        &lt;div id="dl-popup-search-box">
+            
+        &lt;/div>&lt;!-- /#dl-popup-search-box -->
+        
+        &lt;div id="main-slider" class="main-slider">
+            
+        &lt;/div>&lt;!--/. slider-section -->
+        
+        &lt;section class="about-section bd-bottom padding">
+            
+        &lt;/section>&lt;!--/. about-section -->
+        
+        &lt;section class="service-section bg-grey bd-bottom padding">
+            
+        &lt;/section>&lt;!--/. service-section -->
+        
+        &lt;section class="project-section bd-bottom padding">
+            
+        &lt;/section>&lt;!--/. project-section -->
+        
+        &lt;section class="counter-section padding">
+           
+        &lt;/section>&lt;!--/. counter-section-->
+        
+        &lt;section class="team-section bd-bottom padding">
+            
+        &lt;/section>&lt;!--/. team-section -->
+        
+        &lt;section class="testimonial-section bg-grey padding">
+            
+        &lt;/section>&lt;!--/. testimonials-section -->
+        
+        &lt;section class="cta-section bg-grey">
+            
+        &lt;/section>&lt;!--/. cta-section -->
+        
+        &lt;section class="blog-section bg-grey bd-bottom padding">
+           
+        &lt;/section>&lt;!--/. blog-section -->
+        
+        &lt;section class="sponsor-section custom-padding">
+            
+        &lt;/section>&lt;!--/. sponsor-section -->
+        
+        &lt;section class="footer-section info-active">
+            
+        &lt;/section>&lt;!--/. footer-section -->
+
+		&lt;div id="scrollup">
+            &lt;button id="scroll-top" class="scroll-to-top">&lt;i class="fas fa-chevron-up">&lt;/i>&lt;/button>
+        &lt;/div>
+
+		&lt;!-- jQuery Lib -->
+		&lt;script src="assets/js/vendor/jquery-1.12.4.min.js">&lt;/script>
+        &lt;script src="assets/js/vendor/popper.min.js">&lt;/script>
+		&lt;script src="assets/js/vendor/bootstrap.min.js">&lt;/script>
+        &lt;script src="assets/js/vendor/waypoints.min.js">&lt;/script>
+		&lt;script src="assets/js/vendor/slick.min.js">&lt;/script>
+        &lt;script src="assets/js/vendor/jquery.smoothscroll.min.js">&lt;/script>
+		&lt;script src="assets/js/vendor/jquery.ajaxchimp.min.js">&lt;/script>
+		&lt;script src="assets/js/vendor/odometer.min.js">&lt;/script>
+		&lt;script src="assets/js/vendor/jquery.isotope.v3.0.2.js">&lt;/script>
+		&lt;script src="assets/js/vendor/imagesloaded.pkgd.min.js">&lt;/script>
+		&lt;script src="assets/js/vendor/venobox.min.js">&lt;/script>
+		&lt;script src="assets/js/vendor/jquery.hoverdir.js">&lt;/script>
+		&lt;script src="assets/js/vendor/splitting.min.js">&lt;/script>
+		&lt;script src="assets/js/vendor/jquery.nice-select.min.js">&lt;/script>
+		&lt;script src="assets/js/vendor/wow.min.js">&lt;/script>
+		&lt;script src="assets/js/main.js">&lt;/script>
+
+    &lt;/body>
+&lt;/html>
+        </pre>
+       <hr>
+
+
+		<h3 id="temp-components"><strong>B) Template Components</strong> - <a href="#toc">top</a></h3>
+		<p>The site is made of many sections like header, slider, testimonials, services and more...</p>
+
+<h4 id="slider"><strong>1) Header Section</strong> - <a href="#toc">top</a></h4>
+
+
+<pre class="brush: html;">
+&lt;header class="header header-one">
+	&lt;div class="top-header-one top-bar">
+		&lt;div class="container">
+			&lt;div class="top-bar-inner">
+				&lt;div class="top-left">
+					&lt;ul>
+						&lt;li>Phone: &lt;a href="tel:+1234567890">+123 456 7890&lt;/a>&lt;/li>
+						&lt;li>Email: &lt;a href="mailto:contact@email.com">contact@email.com&lt;/a>&lt;/li>
+					&lt;/ul>
+				&lt;/div>
+				&lt;div class="top-right">
+					&lt;ul class="top-social">
+						&lt;li>&lt;a href="#" target="_blank">&lt;i class="fab fa-facebook-f">&lt;/i>&lt;/a>&lt;/li>
+						&lt;li>&lt;a href="#" target="_blank">&lt;i class="fab fa-twitter">&lt;/i>&lt;/a>&lt;/li>
+						&lt;li>&lt;a href="#" target="_blank">&lt;i class="fab fa-instagram">&lt;/i>&lt;/a>&lt;/li>
+						&lt;li>&lt;a href="#" target="_blank">&lt;i class="fab fa-pinterest">&lt;/i>&lt;/a>&lt;/li>
+						&lt;li>&lt;a href="#" target="_blank">&lt;i class="fab fa-youtube">&lt;/i>&lt;/a>&lt;/li>
+					&lt;/ul>
+				&lt;/div>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>&lt;!-- /.top-bar -->
+	&lt;div class="primary-header-one primary-header">
+		&lt;div class="container">
+			&lt;div class="primary-header-inner">
+				&lt;div class="header-logo">
+					&lt;a href="#">
+						&lt;img src="assets/img/logo-dark.png" alt="Logo"/>
+					&lt;/a>
+				&lt;/div>&lt;!-- /.header-logo -->
+				&lt;div class="header-menu-wrap">
+					&lt;ul class="dl-menu">
+						&lt;li>&lt;a href="index.html">Home&lt;/a>
+							&lt;ul>
+								&lt;li>&lt;a href="index.html">Business Homepage&lt;/a>&lt;/li>
+								&lt;li>&lt;a href="index-2.html">Corporate Business&lt;/a>&lt;/li>
+								&lt;li>&lt;a href="index-3.html">Construction Building&lt;/a>&lt;/li>
+								&lt;li>&lt;a href="index-4.html">Software &amp; Saas&lt;/a>&lt;/li>
+								&lt;li>&lt;a href="index-5.html">Digital Agency&lt;/a>&lt;/li>
+							&lt;/ul>
+						&lt;/li>
+						&lt;li>&lt;a href="contact.html">Contact Us&lt;/a>&lt;/li>
+					&lt;/ul>
+				&lt;/div>&lt;!-- /.header-menu-wrap -->
+				&lt;div class="header-right">
+					&lt;div class="search-icon dl-search-icon">&lt;i class="las la-search">&lt;/i>&lt;/div>
+					&lt;a class="header-btn" href="#">Get Started&lt;span>&lt;/span>&lt;/a>
+					&lt;!-- Burger menu -->
+					&lt;div class="mobile-menu-icon">
+						&lt;div class="burger-menu">
+							&lt;div class="line-menu line-half first-line">&lt;/div>
+							&lt;div class="line-menu">&lt;/div>
+							&lt;div class="line-menu line-half last-line">&lt;/div>
+						&lt;/div>
+					&lt;/div>
+				&lt;/div>&lt;!-- /.header-right -->
+			&lt;/div>&lt;!-- /.primary-header-one-inner -->
+		&lt;/div>
+	&lt;/div>&lt;!-- /.primary-header-one -->
+&lt;/header>&lt;!-- /.header-one -->
+</pre>
+
+
+	  <hr>
+<h4 id="portfolio"><strong>2) Main Slider</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;div id="main-slider" class="main-slider">
+	&lt;div class="single-slide">
+		&lt;div class="bg-img" style="background-image: url(assets/img/slider-1.jpg);">&lt;/div>
+		&lt;div class="slider-content-wrap d-flex align-items-center text-left">
+			&lt;div class="container">
+				&lt;div class="slider-content">
+					&lt;div class="slide-caption medium">&lt;div class="inner-layer">&lt;div data-animation="fade-in-right" data-delay="1s">Think In Motion&lt;/div>&lt;/div>&lt;/div>
+					&lt;div class="slide-caption big">&lt;div class="inner-layer">&lt;div data-animation="reveal-text" data-delay="1s">&lt;span style="animation-delay: 1s;">&lt;/span>Take Your Business To&lt;/div>&lt;/div>
+					&lt;/div>
+					&lt;div class="slide-caption big">&lt;div class="inner-layer">&lt;div data-animation="reveal-text" data-delay="2s">&lt;span style="animation-delay: 2s;">&lt;/span>The Next Level.&lt;/div>&lt;/div>&lt;/div>
+					&lt;div class="slide-caption small">&lt;div class="inner-layer">&lt;div data-animation="fade-in-bottom" data-delay="3s">With Mexpro, all over the place becomes all-in-one place. &lt;br>Every part of a project lifecycle is here.&lt;/div>&lt;/div>&lt;/div>
+					&lt;div class="slide-btn-group">
+						&lt;div class="inner-layer">
+							&lt;a href="#" class="slide-btn" data-animation="fade-in-bottom" data-delay="3.5s">View Projects&lt;/a>
+						&lt;/div>
+					&lt;/div>
+				&lt;/div>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>&lt;!-- Slide 01 -->
+&lt;/div>&lt;!--/. slider-section -->
+</pre>
+
+<hr>
+
+<h4 id="portfolio"><strong>3) About Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;section class="about-section bd-bottom padding">
+	&lt;div class="container">
+		&lt;div class="row">
+			&lt;div class="col-md-6 wow fadeInLeft" data-wow-delay="200ms">
+				&lt;div class="section-heading">
+					&lt;h2>Developing the Powerful &lt;br> Brands and Identities!&lt;/h2>
+					&lt;p>Mexpro a trusted name for providing assistants. Initially their main objective was to ensure the service they provide these people are loyal to their industry, experienced and professional.&lt;/p>
+				&lt;/div>
+				&lt;ul class="list-feature">
+					&lt;li class="wow fadeInLeft" data-wow-delay="200ms">
+					   &lt;i class="dl dl-stats">&lt;/i>
+					   &lt;div class="list-feature-content">
+						   &lt;h3>Business Growth&lt;/h3>
+						   &lt;p>Our financial experts support or help you to to find out which way you can raise your funds more.&lt;/p>
+					   &lt;/div>
+					&lt;/li>
+				&lt;/ul>
+				&lt;div class="btn-wrap">
+					&lt;a href="#" class="default-btn">Explore More&lt;/a>
+					&lt;img src="assets/img/signature.png" alt="sign">
+				&lt;/div>
+			&lt;/div>
+			&lt;div class="col-md-6 d-none d-md-block wow fadeInRight" data-wow-delay="200ms">
+				&lt;div class="about-bg-holder">
+					&lt;div class="bg-back wow fadeInDown" data-wow-delay="400ms">&lt;/div>
+					&lt;div class="bg-front wow fadeInUp" data-wow-delay="500ms">&lt;/div>
+					&lt;div class="dot-pattern">&lt;/div>
+					&lt;a class="play-btn venobox" data-vbtype="video" href="https://www.youtube.com/watch?v=ZLaG1migE00">
+						&lt;span class="play-icon">&lt;svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">&lt;path fill="currentColor" d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z">&lt;/path>&lt;/svg>&lt;/span>
+					&lt;/a>
+				&lt;/div>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/section>&lt;!--/. about-section -->
+</pre>
+
+<br>
+
+<hr>
+
+<h4 id="portfolio"><strong>4) Services Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;section class="service-section bg-grey bd-bottom padding">
+	&lt;div class="container">
+		&lt;div class="section-heading mb-40 text-center wow fadeInUp" data-wow-delay="200ms">
+		   &lt;h4>&lt;span>&lt;/span>What We Do &lt;span>&lt;/span>&lt;/h4>
+		   &lt;h2>Get Exceptional Services&lt;/h2>
+		   &lt;p>Financial experts support or help you to to find out which &lt;br> way you can raise your funds more.&lt;/p>
+		&lt;/div>
+		&lt;div class="row service-items">
+			&lt;div class="col-lg-3 col-sm-6 sm-padding wow fadeInUp" data-wow-delay="200ms">
+				&lt;div class="service-item">
+					&lt;div class="service-icon">&lt;i class="dl dl-presentation">&lt;/i>&lt;/div>
+					&lt;h3>Financial Advices&lt;/h3>
+					&lt;p>Financial experts support or help you to to find out which way you can raise your funds more.&lt;/p>
+					&lt;a href="#" class="read-more">Read More&lt;i class="las la-long-arrow-alt-right">&lt;/i>&lt;/a>
+					&lt;div class="dir-overlay">&lt;/div>
+				&lt;/div>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/section>&lt;!--/. service-section -->
+</pre>
+
+<br>
+
+<hr>
+
+<h4 id="portfolio"><strong>5) Project Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;section class="project-section bd-bottom padding">
+	&lt;div class="container">
+		&lt;div class="section-heading-wrap row mb-40">
+			&lt;div class="col-md-6">
+				&lt;div class="section-heading">
+				   &lt;h4>Recent Projects &lt;span>&lt;/span>&lt;/h4>
+				   &lt;h2>Love to Work for Business!&lt;/h2>
+				   &lt;p>Financial experts support or help you to to find out which &lt;br class="d-none d-lg-block"> way you can raise your funds more.&lt;/p>
+				&lt;/div>
+			&lt;/div>
+			&lt;div class="col-md-6">
+			   &lt;p>Financial experts support or help you to to find out which &lt;br> way you can raise your funds more.&lt;/p>
+			   &lt;a href="#" class="default-btn">View All Projects&lt;/a>
+			&lt;/div>
+		&lt;/div>
+		&lt;div class="slider project-carousel nav-style carousel-dots">
+			&lt;div class="slick-item">
+				&lt;div class="project-item">
+					&lt;div class="project-thumb">
+						&lt;img src="assets/img/project-1.jpg" alt="thumb">
+						&lt;div class="dir-overlay">&lt;a class="venobox" data-gall="myGallery" href="assets/img/project-1.jpg">&lt;i class="las la-plus">&lt;/i>&lt;/a>&lt;/div>
+					&lt;/div>
+					&lt;div class="project-content">
+						&lt;h4>&lt;a href="#">Branding&lt;/a>&lt;/h4>
+						&lt;h3>&lt;a href="#">Setting up the right creative theme&lt;/a>&lt;/h3>
+						&lt;a href="#" class="read-more">Read More&lt;i class="las la-long-arrow-alt-right">&lt;/i>&lt;/a>
+					&lt;/div>
+				&lt;/div>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/section>&lt;!--/. project-section -->
+</pre>
+
+<br>
+
+<hr>
+
+<h4 id="portfolio"><strong>6) Counter Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;section class="counter-section padding">
+   &lt;div class="overlay">&lt;/div>
+	&lt;div class="container">
+		&lt;div class="section-heading text-center">
+		   &lt;h4 class="wow fadeInUp" data-wow-delay="200ms">Take Your Website to Next Level!&lt;/h4>
+			&lt;h2 class="wow fadeInUp" data-wow-delay="300ms">Innovative It Helping All &lt;br> Over the World!&lt;/h2>
+			&lt;p class="wow fadeInUp" data-wow-delay="400ms">Financial experts support or help you to to find out which &lt;br> way you can raise your funds more.&lt;/p>
+			&lt;a href="#" class="default-btn wow fadeInUp" data-wow-delay="500ms">Request Consultation&lt;/a>
+		&lt;/div>
+		&lt;div class="row counter-wrap mb-70">
+			&lt;div class="col-lg-3 col-sm-6 bd-right">
+				&lt;div class="counter-item">
+					&lt;div class="counter-content">
+						&lt;div class="counter-icon">&lt;i class="dl dl-startup">&lt;/i>&lt;/div>
+						&lt;h3>&lt;span class="odometer" data-count="2589">00&lt;/span>&lt;/h3>
+						&lt;h4>Projects Complete&lt;/h4>
+					&lt;/div>
+				&lt;/div>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/section>&lt;!--/. counter-section-->
+</pre>
+
+<br>
+
+<hr>
+
+<h4 id="portfolio"><strong>7) Team Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;section class="team-section bd-bottom padding">
+	&lt;div class="container">
+		&lt;div class="section-heading mb-40 text-center wow fadeInUp" data-wow-delay="200ms">
+		   &lt;h4>Team Members&lt;/h4>
+		   &lt;h2>Our Expart Advisors&lt;/h2>
+		   &lt;p>Financial experts support or help you to to find out which &lt;br> way you can raise your funds more.&lt;/p>
+		&lt;/div>
+		&lt;div class="row team-items">
+		   &lt;div class="team-info">&lt;/div>
+			&lt;div class="col-lg-3 col-sm-6 sm-padding wow fadeInUp" data-wow-delay="200ms">
+				&lt;div class="team-item" data-name="Jonathan Smith" data-position="Designer">
+					&lt;div class="team-thumb">
+						&lt;figure>&lt;img src="assets/img/team-1.jpg" alt="thumb">&lt;/figure>
+					&lt;/div>
+				&lt;/div>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/section>&lt;!--/. team-section -->
+</pre>
+
+<br>
+
+<hr>
+
+<h4 id="portfolio"><strong>8) Testimonial Section</strong> - <a href="#toc">top</a></h4>
+<pre class="brush: html;">
+&lt;section class="testimonial-section bg-grey padding">
+	&lt;div class="map">&lt;/div>
+	&lt;div class="container">
+		&lt;div class="section-heading mb-40 text-center wow fadeInUp" data-wow-delay="200ms">
+		   &lt;h4>Testimonials&lt;/h4>
+		   &lt;h2>Words From Clients&lt;/h2>
+		   &lt;p>Financial experts support or help you to to find out which &lt;br> way you can raise your funds more.&lt;/p>
+		&lt;/div>
+		&lt;div class="slider testimonials-carousel nav-style carousel-dots">
+			&lt;div class="testi-item">
+				&lt;div class="review">
+					&lt;p>"Thank you for guiding us through the business process, understanding, and always ready to needs. We love our new space and built by the very best!"&lt;/p>
+				&lt;/div>
+				&lt;div class="testi-meta">
+					&lt;img src="assets/img/testimonial-1.jpg" alt="thumb">
+					&lt;div class="testi-content">
+						&lt;h3>Kyle Frederick&lt;/h3>
+						&lt;h4>Founder CEO&lt;/h4>
+					&lt;/div>
+				&lt;/div>  
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/section>&lt;!--/. testimonials-section -->
+</pre>
+
+<br>
+
+<h4><strong>9) CTA Section</strong></h4>
+<pre class="brush: html;">
+&lt;section class="cta-section bg-grey">
+	&lt;div class="container">
+		&lt;div class="row cta-wrap">
+			&lt;div class="col-md-6 wow fadeInLeft" data-wow-delay="200ms">
+				&lt;div class="cta-content">
+					&lt;h2>Innovative It Helping All Over the World!&lt;/h2>
+					&lt;p>Mexpro a trusted name for providing assistants. Initially their main objective was to ensure the service they provide these people are loyal to their industry.&lt;/p>
+					&lt;a href="#" class="default-btn">Get Free Quote&lt;/a>
+				&lt;/div>
+			&lt;/div>
+			&lt;div class="cta-img d-none d-md-block">&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/section>&lt;!--/. cta-section -->
+</pre>
+
+<br>
+
+<h4><strong>10) Blog Section</strong></h4>
+<pre class="brush: html;">
+&lt;section class="blog-section bg-grey bd-bottom padding">
+	&lt;div class="container">
+		&lt;div class="section-heading mb-40 text-center wow fadeInUp" data-wow-delay="200ms">
+		   &lt;h4>Blog Posts&lt;/h4>
+		   &lt;h2>Get The Latest Updats&lt;/h2>
+		   &lt;p>Financial experts support or help you to to find out which &lt;br> way you can raise your funds more.&lt;/p>
+		&lt;/div>
+		&lt;div class="row">
+			&lt;div class="col-lg-4 col-sm-6 padding-15">
+				&lt;div class="blog-item">
+					&lt;div class="blog-thumb">
+						&lt;img src="assets/img/post-1.jpg" alt="post">
+						&lt;span class="category">&lt;a href="#">Design&lt;/a>&lt;/span>
+					&lt;/div>
+					&lt;div class="blog-content">
+						&lt;div class="post-meta">
+							&lt;div class="meta-list">&lt;h4>&lt;i class="far fa-calendar-alt">&lt;/i>&lt;a href="#">Jan 01 2021&lt;/a>&lt;/h4>&lt;/div>
+							&lt;div class="meta-list">&lt;h4>&lt;i class="far fa-user">&lt;/i>&lt;a href="#">Jonathan Smith&lt;/a>&lt;/h4>&lt;/div>
+						&lt;/div>
+						&lt;h3>&lt;a href="#">How to go about initiating  an  start-up in few days.&lt;/a>&lt;/h3>
+						&lt;p>Financial experts support or help you to to find out which way you can raise your funds more.&lt;/p>
+						&lt;a href="#" class="read-more">Read More&lt;i class="las la-long-arrow-alt-right">&lt;/i>&lt;/a>
+					&lt;/div>
+				&lt;/div>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/section>&lt;!--/. blog-section -->
+</pre>
+
+<br>
+
+<h4><strong>11) Sponsor Section</strong></h4>
+<pre class="brush: html;">
+&lt;section class="sponsor-section custom-padding">
+	&lt;div class="container">
+		&lt;div class="slider sponsor-carousel nav-style">
+			&lt;div class="sponsor-item">
+				&lt;div class="sponsor-img">&lt;img src="assets/img/sponsor-1.png" alt="sponsor">&lt;/div>
+				&lt;div class="sponsor-hover">&lt;img src="assets/img/sponsor-1.png" alt="sponsor">&lt;/div>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/section>&lt;!--/. sponsor-section -->
+</pre>
+
+<br>
+
+<h4><strong>12) Footer Section</strong></h4>
+<pre class="brush: html;">
+&lt;section class="footer-section info-active">
+	&lt;div class="footer-info">
+		&lt;div class="container">
+			&lt;div class="footer-info-inner">
+				&lt;div class="footer-info-list">
+					&lt;div>&lt;svg enable-background="new 0 0 512.076 512.076" version="1.1" viewBox="0 0 512.08 512.08" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+						&lt;g transform="translate(-1 -1)">
+						&lt;path d="m499.64 396.04-103.65-69.12c-13.153-8.701-30.784-5.838-40.508 6.579l-30.191 38.818c-3.88 5.116-10.933 6.6-16.546 3.482l-5.743-3.166c-19.038-10.377-42.726-23.296-90.453-71.04s-60.672-71.45-71.049-90.453l-3.149-5.743c-3.161-5.612-1.705-12.695 3.413-16.606l38.792-30.182c12.412-9.725 15.279-27.351 6.588-40.508l-69.12-103.65c-8.907-13.398-26.777-17.42-40.566-9.131l-43.341 26.035c-13.618 8.006-23.609 20.972-27.878 36.181-15.607 56.866-3.866 155.01 140.71 299.6 115 115 200.62 145.92 259.46 145.92 13.543 0.058 27.033-1.704 40.107-5.239 15.212-4.264 28.18-14.256 36.181-27.878l26.061-43.315c8.301-13.792 4.281-31.673-9.123-40.585zm-5.581 31.829-26.001 43.341c-5.745 9.832-15.072 17.061-26.027 20.173-52.497 14.413-144.21 2.475-283.01-136.32s-150.73-230.5-136.32-283.01c3.116-10.968 10.354-20.307 20.198-26.061l43.341-26.001c5.983-3.6 13.739-1.855 17.604 3.959l37.547 56.371 31.514 47.266c3.774 5.707 2.534 13.356-2.85 17.579l-38.801 30.182c-11.808 9.029-15.18 25.366-7.91 38.332l3.081 5.598c10.906 20.002 24.465 44.885 73.967 94.379 49.502 49.493 74.377 63.053 94.37 73.958l5.606 3.089c12.965 7.269 29.303 3.898 38.332-7.91l30.182-38.801c4.224-5.381 11.87-6.62 17.579-2.85l103.64 69.12c5.818 3.862 7.563 11.622 3.958 17.604z"/>
+						&lt;path d="m291.16 86.39c80.081 0.089 144.98 64.986 145.07 145.07 0 4.713 3.82 8.533 8.533 8.533s8.533-3.82 8.533-8.533c-0.099-89.503-72.63-162.04-162.13-162.13-4.713 0-8.533 3.82-8.533 8.533s3.82 8.533 8.533 8.533z"/>
+						&lt;path d="m291.16 137.59c51.816 0.061 93.806 42.051 93.867 93.867 0 4.713 3.821 8.533 8.533 8.533 4.713 0 8.533-3.82 8.533-8.533-0.071-61.238-49.696-110.86-110.93-110.93-4.713 0-8.533 3.82-8.533 8.533s3.82 8.533 8.533 8.533z"/>
+						&lt;path d="m291.16 188.79c23.552 0.028 42.638 19.114 42.667 42.667 0 4.713 3.821 8.533 8.533 8.533s8.533-3.82 8.533-8.533c-0.038-32.974-26.759-59.696-59.733-59.733-4.713 0-8.533 3.82-8.533 8.533s3.82 8.533 8.533 8.533z"/>
+						&lt;/g>&lt;/svg>&lt;/div>
+					&lt;h3>Phone: +123 456 7890 &lt;br> Support: +123 456 7890&lt;/h3>
+				&lt;/div>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>&lt;!--/. footer-info -->
+   &lt;div class="map light">&lt;/div>
+	&lt;div class="footer-top">
+		&lt;div class="container">
+			&lt;div class="row">
+				&lt;div class="col-lg-3 col-sm-6 sm-padding">
+					&lt;div class="footer-widget">
+						&lt;a class="logo" href="#">
+							&lt;img src="assets/img/logo-light.png" alt="logo">
+						&lt;/a>
+						&lt;p>Financial experts support or help you to to find out which way you can raise your funds more.&lt;/p>
+						&lt;div class="booking-wrap">
+							&lt;div>&lt;svg height="448pt" viewBox="0 -5 448 447" width="448pt" xmlns="http://www.w3.org/2000/svg">&lt;path d="m448 264.5v-264h-368v56h296c4.417969 0 8 3.582031 8 8v200zm0 0">&lt;/path>&lt;path d="m178.34375 338.84375c1.5-1.5 3.535156-2.34375 5.65625-2.34375h184v-264h-368v264h72c4.417969 0 8 3.582031 8 8v92.6875zm0 0">&lt;/path>&lt;/svg>&lt;/div>
+							&lt;div class="booking-wrap-inner">
+								&lt;h3>Need Free Consultation?&lt;/h3>
+								&lt;a href="#">Book Schedule&lt;/a>
+							&lt;/div>
+						&lt;/div>
+						&lt;ul class="footer-social">
+							&lt;li>&lt;a href="#">&lt;i class="fab fa-facebook">&lt;/i>&lt;/a>&lt;/li>
+						&lt;/ul>
+					&lt;/div>
+				&lt;/div>
+				&lt;div class="col-lg-3 col-sm-6 sm-padding">
+					&lt;div class="footer-widget link-widget">
+						&lt;h3>Information&lt;/h3>
+						&lt;ul class="widget-links">
+							&lt;li>&lt;i class="fas fa-square-full">&lt;/i>&lt;a href="#">Business Strategy&lt;/a>&lt;/li>
+						&lt;/ul>
+					&lt;/div>
+				&lt;/div>
+				&lt;div class="col-lg-3 col-sm-6 sm-padding">
+					&lt;div class="footer-widget">
+						&lt;h3>Recent Articles&lt;/h3>
+						&lt;ul class="thumb-post">
+							&lt;li>
+								&lt;div class="thumb">
+									&lt;img src="assets/img/post-thumb-1.jpg" alt="thumb">
+								&lt;/div>
+								&lt;div class="thumb-post-meta">
+									&lt;h3>&lt;a href="#">Financial experts will support or help...&lt;/a>&lt;/h3>
+									&lt;a href="#" class="date">&lt;i class="far fa-calendar-alt">&lt;/i>Jan 01 2021&lt;/a>
+								&lt;/div>
+							&lt;/li>
+							&lt;li>
+								&lt;div class="thumb">
+									&lt;img src="assets/img/post-thumb-2.jpg" alt="thumb">
+								&lt;/div>
+								&lt;div class="thumb-post-meta">
+									&lt;h3>&lt;a href="#">How to go initiating  an  start-up in few...&lt;/a>&lt;/h3>
+									&lt;a href="#" class="date">&lt;i class="far fa-calendar-alt">&lt;/i>Jan 01 2021&lt;/a>
+								&lt;/div>
+							&lt;/li>
+						&lt;/ul>
+					&lt;/div>
+				&lt;/div>
+				&lt;div class="col-lg-3 col-sm-6 sm-padding">
+					&lt;div class="footer-widget">
+						&lt;h3>Newsletter Signup&lt;/h3>
+						&lt;p>Signup today for hints, tips and the latest news and updates.&lt;/p>
+						&lt;div class="subscribe-form">
+							&lt;form action="#" class="subscribe-form">
+								&lt;input class="form-control" type="email" name="email" placeholder="Email *" required="">
+								&lt;input type="hidden" name="action" value="mailchimpsubscribe">
+								&lt;button class="submit">Subscribe&lt;i class="fas fa-paper-plane">&lt;/i>&lt;/button>
+								&lt;div class="clearfix">&lt;/div>
+							&lt;/form>
+						&lt;/div>
+					&lt;/div>
+				&lt;/div>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+	&lt;div class="footer-bottom">
+		&lt;div class="container">
+			&lt;div class="copyright-wrap">
+				&lt;p>© &lt;span id="currentYear">&lt;/span> ThemeEaster All Rights Reserved.&lt;/p>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/section>&lt;!--/. footer-section -->
+</pre>
+
+<br>
+<br>
+
+<hr>
+
+<h4><strong>14) Contact Form Configure</strong></h4>
+<p>Just open the <b>contact.php</b> file and add your email in the 20 no line. That's it.</p>
+<pre class="brush: php;">
+&lt;?php
+
+    // Only process POST reqeusts.
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // Get the form fields and remove whitespace.
+        $name = strip_tags(trim($_POST["name"]));
+        $name = str_replace(array("\r","\n"),array(" "," "),$name);
+        $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
+        $message = trim($_POST["message"]);
+
+        // Check that data was sent to the mailer.
+        if ( empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            // Set a 400 (bad request) response code and exit.
+            http_response_code(400);
+            echo "Oops! There was a problem with your submission. Please complete the form and try again.";
+            exit;
+        }
+
+        // Update this to your desired email address.
+        $recipient = "contact@yourdomain.com";
+        $subject = "Message from $name";
+
+        // Email content.
+        $email_content = "Name: $name\n";
+        $email_content .= "Email: $email\n\n";
+        $email_content .= "Subject: $subject\n\n";
+        $email_content .= "Message: $message\n";
+
+        // Email headers.
+        $email_headers = "From: $name <$email>\r\nReply-to: <$email>";
+
+        // Send the email.
+        if (mail($recipient, $subject, $email_content, $email_headers)) {
+            // Set a 200 (okay) response code.
+            http_response_code(200);
+            echo "Thank You! Your message has been sent.";
+        } else {
+            // Set a 500 (internal server error) response code.
+            http_response_code(500);
+            echo "Oops! Something went wrong and we couldn't send your message.";
+        }
+
+    } else {
+        // Not a POST request, set a 403 (forbidden) response code.
+        http_response_code(403);
+        echo "There was a problem with your submission, please try again.";
+    }
+
+?>
+</pre>
+
+<br>
+
+<hr>
+
+<p>&nbsp;</p>
+
+	  <hr>
+		<h3 id="cssFiles"><strong>C) CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+		 <p>These are the css files:</p>
+		<ol>
+			<li>bootstrap.min.css</li>
+			<li>animate.min.css</li>
+			<li>elegant-font-icons.css</li>
+			<li>elegant-line-icons.css</li>
+			<li>owl.carousel.css</li>
+			<li>main.css </li>
+	        <li>responsive.css</li>
+	  </ol>
+
+
+<p>&nbsp;</p>
+	  <hr>
+
+		<h3 id="javascript"><strong>D) JavaScript</strong> - <a href="#toc">top</a></h3>
+
+		<p>This theme use these Javascript files:</p>
+
+		<ol>
+		  <li>jQuery<br>
+		    jQuery is a Javascript library that greatly reduces the amount of code that you must write. jQuery use these javascript files:
+		    <pre>
+            	bootstrap.min.js
+                smooth-scroll.min.js
+                owl.carousel.min.js
+                jquery.ajaxchimp.min.js
+                jquery-1.12.4.min.js
+                owl.carousel.min.js
+                venobox.min.js
+                wow.min.js
+                main.js
+            </pre>
+		    You can edit the contact.js files. for setting contact form
+		    <br>
+            <br>
+		  </li>
+	  </ol>
+
+<hr>
+
+		<h3 id="credits"><strong>F) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		<ol>
+			<li><a href="http://getbootstrap.com" target="_blank">Bootstrap 4</a></li>
+			<li><a href="http://www.owlcarousel.owlgraphic.com" target="_blank">OWL Carousel</a></li>
+			<li><a href="https://wowjs.uk/" target="_blank">WOW JS</a></li>
+			<li><a href="http://veno.es/venobox/" target="_blank">VenoBox</a></li>
+			<li><a href="https://github.com/cferdinandi/smooth-scroll" target="_blank">Smooth Scroll</a></li>
+			<li><a href="http://plugins.jquery.com/ajaxchimp/" target="_blank">AjaxChimp</a></li>
+		</ol>
+	    <p>
+
+    <hr>
+        <h3 id="php"><strong>G) PHP Code Explanation </strong> - <a href="#toc">top</a></h3>
+        <p>There are only one php code for contact page which is contact.php, open this file and change the email and subject on line 24 and line 27.
+         No need to edit other code unless you really want to.
+  <hr>
+		<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist.</p>
+
+	  <p class="append-bottom alt large"><strong>ThemeEaster</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+
+		<hr class="space">
+	</div>
+<!-- end div .container -->
+	<script type="text/javascript" src="syntax-highlighter/scripts/shCore.js"></script>
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushXml.js"></script>
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushPhp.js"></script>
+	<script type="text/javascript">
+     SyntaxHighlighter.all()
+</script>
+</body>
+</html>
