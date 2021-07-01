@@ -743,6 +743,32 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
     right: 40px;
     top: 30px;
 }
+
+.bg-back-2{
+    background-image: url("../img/OCTOGONE_AN_3D_8-01.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: contain;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.bg-front-2{
+    background-image: url("../img/OCTOGONE_AN_3D_AVEC_FONCTIONS_ET STRATEGIES-01.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    right: 40px;
+    top: 30px;
+}
+
 .dot-pattern{
     background-image: url(../img/pattern-1.png);
     background-repeat: no-repeat;
