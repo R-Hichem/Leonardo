@@ -280,3 +280,7 @@
 @media (max-width: 580px){
     .slide-caption.small br{ display: none; }
 }
+
+.slider-content {
+    margin-left: 68px;
+}

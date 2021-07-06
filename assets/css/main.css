@@ -123,7 +123,7 @@ body{
     font-size: 15px;
     font-style: normal;
     line-height: 28px;
-    color: #6a7c92;
+    color: #46494c;
     position: relative;
     overflow-x: hidden;
 }
@@ -215,8 +215,8 @@ button{
 
 /* ======= Scrollbar Style ======= */
 ::-webkit-scrollbar {
-    width: 8px;
-    height: 8px
+    width: 18px;
+    height: 18px
 }
 ::-webkit-scrollbar-thumb {
     cursor: pointer;
@@ -543,7 +543,7 @@ button{
 }
 .carousel-dots .slick-dots li button{
     display: inline-block;
-    background-color: #6a7c92;
+    background-color: #46494c;
     width: 15px;
     height: 8px;
     border-radius: 3px;
@@ -819,7 +819,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
 .play-btn small{
 	font-size: 12px;
     position: relative;
-    color: #6a7c92;
+    color: #46494c;
     display: inline-block;
     font-family: "Work Sans",sans-serif;
     font-weight: 600;
@@ -1130,7 +1130,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
     z-index: -1;
 }
 .read-more{
-    color: #6a7c92;
+    color: #46494c;
     font-family: "Work Sans",sans-serif;
     font-size: 12px;
     text-transform: uppercase;
@@ -1241,7 +1241,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
 }
 .service-section-2 .service-item p{ margin: 0; }
 .service-section-2 .service-item:hover p{
-    color: #6a7c92;
+    color: #46494c;
 }
 .service-section-2 .service-item:hover h3{ color: #051441; }
 
@@ -1579,7 +1579,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
 .testi-item h4{
     font-family: "Work Sans",sans-serif;
     font-size: 12px;
-    color: #6a7c92;
+    color: #46494c;
     text-transform: uppercase;
 }
 .testi-item img{
@@ -1834,7 +1834,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
     height: 40px;
     line-height: 40px;
     text-align: center;
-    color: #6a7c92;
+    color: #46494c;
     display: inline-block;
     visibility: hidden;
     opacity: 0;
@@ -2032,7 +2032,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
 .team-info .position{
     font-family: "Work Sans",sans-serif;
     background: #ffffff;
-    color: #6a7c92;
+    color: #46494c;
     font-size: 12px;
     text-transform: uppercase;
     position: absolute;
@@ -2197,7 +2197,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
 .corporate .team-content{ margin-top: 15px; }
 .corporate .team-content h3{ margin-bottom: -3px; }
 .corporate .team-content h4{
-    color: #6a7c92;
+    color: #46494c;
     margin: 0;
 }
 .corporate .team-social{
@@ -2255,7 +2255,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
     font-size: 12px;
     font-weight: 600;
     text-transform: uppercase;
-    color: #6a7c92;
+    color: #46494c;
     display: block;
     letter-spacing: 2px;
 }
@@ -2352,7 +2352,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
     margin: 5px 0 5px 0;
 }
 .counter-content h4{
-    color: #6a7c92;
+    color: #46494c;
     font-family: "Work Sans",Sans-serif;
     font-size: 12px;
     font-weight: 600;
@@ -2584,7 +2584,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
     height: 55px;
     border: 1px solid #eee;
     margin: 0;
-    color: #6a7c92;
+    color: #46494c;
 }
 .subscribe-section .subscribe-form{
     width: 70%;
@@ -2716,7 +2716,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
     font-weight: 600;
     line-height: 1;
     text-transform: uppercase;
-    color: #6a7c92;
+    color: #46494c;
 }
 .post-meta .meta-list h4 a:hover{ color: #5a49f8; }
 .post-meta .meta-list h4 i{
@@ -3134,16 +3134,16 @@ blockquote span{
     cursor: pointer;
 }
 .search-form input::-webkit-input-placeholder{
-    color: #6a7c92 !important;
+    color: #46494c !important;
 }
 .search-form input:-moz-placeholder{ /* Firefox 18- */
-    color: #6a7c92 !important;
+    color: #46494c !important;
 }
 .search-form input::-moz-placeholder{  /* Firefox 19+ */
-    color: #6a7c92 !important;
+    color: #46494c !important;
 }
 .search-form input:-ms-input-placeholder{
-    color: #6a7c92 !important;
+    color: #46494c !important;
 }
 
 /*========== Thumbnails Post ==========*/
@@ -3174,7 +3174,7 @@ blockquote span{
     font-weight: 600;
     line-height: 1;
     text-transform: uppercase;
-    color: #6a7c92;
+    color: #46494c;
     text-decoration: none;
     display: block;
 }
@@ -3187,13 +3187,13 @@ blockquote span{
 .thumb-post .thumb-post-meta h3{
     font-family: "sofia-pro-regular",sans-serif;
     font-size: 16px;
-    color: #6a7c92;
+    color: #46494c;
     letter-spacing: -0.2px;
     margin-top: -5px;
     margin-bottom: 10px;
     line-height: 24px;
 }
-.thumb-post .thumb-post-meta h3 a{ color: #6a7c92; }
+.thumb-post .thumb-post-meta h3 a{ color: #46494c; }
 .thumb-post .thumb-post-meta .date:hover,
 .thumb-post li a:hover{
     color: #fff;
