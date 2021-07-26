@@ -231,18 +231,18 @@ button{
 }
 ::-webkit-scrollbar-thumb {
     cursor: pointer;
-    background: #5a49f8;
+    background: #1166C0;
 }
 ::selection {
-    background-color: #5a49f8;
+    background-color: #1166C0;
     color: #fff
 }
 -webkit-::selection {
-    background-color: #5a49f8;
+    background-color: #1166C0;
     color: #fff
 }
 ::-moz-selection {
-    background-color: #5a49f8;
+    background-color: #1166C0;
     color: #fff
 }
 
@@ -320,7 +320,7 @@ button{
 }
 
 .site-preloader-wrap .spinner {
-    background-color: #5a49f8;
+    background-color: #1166C0;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -367,7 +367,7 @@ button{
 }
 .btn-group-left a{}
 .default-btn{
-    background: linear-gradient(to right, #5a49f8, #7a64f2);
+    background: linear-gradient(to right, #1166C0, #1166C0);
     font-family: "Work Sans", Sans-serif;
     font-size: 12px;
     color: #fff;
@@ -429,9 +429,9 @@ button{
     display: block;
 }
 .section-heading h4{
-    background-color: rgba(90, 73, 248,0.1);
+    background-color: rgba(17, 102, 192,0.1);
     font-size: 12px;
-    color: #5a49f8;
+    color: #1166C0;
     font-weight: 600;
     letter-spacing: 0;
     font-family: "Work Sans",sans-serif;
@@ -488,7 +488,7 @@ button{
 .nice-select .option:hover,
 .nice-select .option.focus,
 .nice-select .option.selected.focus {
-    background: linear-gradient(to right, #5a49f8, #7a64f2);
+    background: linear-gradient(to right, #1166C0, #1166C0);
     color: #fff;
 }
 #form-messages{
@@ -502,7 +502,7 @@ button{
 /* ======= Slick Controls ======= */
 .slick-slide:focus{ outline: none; }
 .nav-style .slick-arrow{
-    background-color: #5a49f8;
+    background-color: #1166C0;
     width: 45px;
     height: 45px;
     line-height: 45px;
@@ -566,7 +566,7 @@ button{
     text-indent: -999px;
 }
 .carousel-dots .slick-dots li.slick-active button{
-    background-color: #5a49f8;
+    background-color: #1166C0;
     width: 40px;
 }
 .carousel-dots .slick-dots li button:focus{ outline: none; }
@@ -616,7 +616,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
     width: 100%;
     height: 100%;
     text-align: center;
-    background-color: #5a49f8;
+    background-color: #1166C0;
     font-size: 10px;
     padding: 0;
     line-height: 40px;
@@ -722,7 +722,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
 .list-feature li i{
     font-size: 50px;
     margin-right: 20px;
-    color: #5a49f8;
+    color: #1166C0;
     margin-top: 10px;
 }
 .btn-wrap{
@@ -821,7 +821,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
 	align-items: center;
     justify-content: center;
 	background-color: #ffffff;
-    color: #5a49f8;
+    color: #1166C0;
 	-webkit-transition: all .4s ease-in-out;
 	-o-transition: all .4s ease-in-out;
 	transition: all .4s ease-in-out;
@@ -907,7 +907,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
 }
 .corporate .section-heading h3 span{}
 .about-section .section-heading h3 span i{
-    color: #5a49f8;
+    color: #1166C0;
     font-size: 40px;
     margin-right: 20px;
 }
@@ -1070,7 +1070,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
     padding-left: 60px;
 }
 .promo-item h4:before{
-    background: linear-gradient(to right, #5a49f8, #7a64f2);
+    background: linear-gradient(to right, #1166C0, #1166C0);
     width: 50px;
     height: 3px;
     content: '';
@@ -1124,7 +1124,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
 }
 .service-item .service-icon{
     font-size: 60px;
-    background: -webkit-gradient(linear, left top, left bottom, from(#5a49f8), to(#7a64f2));
+    background: -webkit-gradient(linear, left top, left bottom, from(#1166C0), to(#1166C0));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 20px;
@@ -1133,7 +1133,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
     z-index: 1;
 }
 .service-item .service-icon:before{
-    background-color: #5a49f8;
+    background-color: #1166C0;
     content: "";
     width: 50px;
     height: 70px;
@@ -1164,10 +1164,10 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
     margin-bottom: 3px;
     transition: all 0.3s ease-in-out;
 }
-.read-more:hover{ color: #5a49f8; }
+.read-more:hover{ color: #1166C0; }
 .read-more:hover i{ transform: translateX(5px); }
 .dir-overlay{
-    background: -webkit-gradient(linear, left top, left bottom, from(#5a49f8), to(#7a64f2));
+    background: -webkit-gradient(linear, left top, left bottom, from(#1166C0), to(#1166C0));
     width: 100%;
     height: 100%;
     position: absolute;
@@ -1218,7 +1218,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
 }
 .service2-item .service2-icon{
     font-size: 60px;
-    background: -webkit-gradient(linear, left top, left bottom, from(#5a49f8), to(#7a64f2));
+    background: -webkit-gradient(linear, left top, left bottom, from(#1166C0), to(#1166C0));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 20px;
@@ -1227,7 +1227,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
     z-index: 1;
 }
 .service2-item .service2-icon:before{
-    background-color: #5a49f8;
+    background-color: #1166C0;
     content: "";
     width: 50px;
     height: 70px;
@@ -1258,10 +1258,10 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
     margin-bottom: 3px;
     transition: all 0.3s ease-in-out;
 }
-.read-more:hover{ color: #5a49f8; }
+.read-more:hover{ color: #1166C0; }
 .read-more:hover i{ transform: translateX(5px); }
 .dir-overlay{
-    background: -webkit-gradient(linear, left top, left bottom, from(#5a49f8), to(#7a64f2));
+    background: -webkit-gradient(linear, left top, left bottom, from(#1166C0), to(#1166C0));
     width: 100%;
     height: 100%;
     position: absolute;
@@ -1287,7 +1287,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
     box-shadow: 0px 15px 20px 0px rgba(209, 218, 235, 0.50);
 }
 .service-section-2 .service-item:before{
-    background: linear-gradient(to right, #5a49f8, #7a64f2);
+    background: linear-gradient(to right, #1166C0, #1166C0);
     content: "";
     width: 50%;
     height: 3px;
@@ -1304,7 +1304,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
     transform: translateY(-10px);
 }
 .service-section-2 .service-item .service-icon{
-    background: linear-gradient(to right, #5a49f8, #7a64f2);
+    background: linear-gradient(to right, #1166C0, #1166C0);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 35px;
@@ -1326,7 +1326,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
 }
 .service-section-2.basic .service-item .service-icon:before{background-image: url(../img/line-2.png);}
 .service-section-2 .service-item .read-more{
-        background: linear-gradient(to right, #5a49f8, #7a64f2);
+        background: linear-gradient(to right, #1166C0, #1166C0);
     width: 45px;
     height: 45px;
     line-height: 45px;
@@ -1387,7 +1387,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
     margin-top: -35px;
 }
 .service-section-3 .service-content .service-icon{
-    background: #5a49f8;
+    background: #1166C0;
     font-size: 40px;
     width: 70px;
     height: 70px;
@@ -1396,7 +1396,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
     border-radius: 2px;
     color: #fff;
     -webkit-text-fill-color: inherit;
-    box-shadow: 0 5px 20px 0 rgba(90, 73, 248,.8);
+    box-shadow: 0 5px 20px 0 rgba(17, 102, 192,.8);
 }
 .service-section-3 .service-content .service-icon:before{
     display: none;
@@ -1440,7 +1440,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
     overflow: hidden;
 }
 .project-thumb .dir-overlay{
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(90, 73, 248,0.9)), to(rgba(122, 100, 242,0.9)));
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 102, 192,0.9)), to(rgba(17, 102, 192,0.9)));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1468,9 +1468,9 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
     z-index: 2;
 }
 .project-content h4 a{
-    background-color: rgba(90, 73, 248,0.1);
+    background-color: rgba(17, 102, 192,0.1);
     font-size: 12px;
-    color: #5a49f8;
+    color: #1166C0;
     font-weight: 600;
     letter-spacing: 0;
     font-family: "Work Sans",sans-serif;
@@ -1479,7 +1479,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
     padding: 3px 15px;
 }
 .project-content h4 a:hover{
-    background-color: #5a49f8;
+    background-color: #1166C0;
     color: #fff;
 }
 .project-content h3 a,
@@ -1531,7 +1531,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
 }
 .project-details .project-details-meta li i{
     font-size: 40px;
-    color: #5a49f8;
+    color: #1166C0;
     margin-top: -10px;
     margin-right: 10px;
 }
@@ -1549,7 +1549,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
     height: 40px;
     line-height: 40px;
     text-align: center;
-    background: linear-gradient(to right, #5a49f8, #7a64f2);
+    background: linear-gradient(to right, #1166C0, #1166C0);
     color: #fff;
     border-radius: 2px;
     margin-left: 5px;
@@ -1790,7 +1790,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
     transition: all 0.3s ease-in-out;
 }
 .testi-controls div:hover{
-    background: linear-gradient(to right, #5a49f8, #7a64f2);
+    background: linear-gradient(to right, #1166C0, #1166C0);
     cursor: pointer;
     color: #fff;
     border: 2px solid transparent;
@@ -1861,7 +1861,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
     margin-bottom: 20px;
 }
 .skills-items .skills-item .progress .progress-bar{
-    background: linear-gradient(to right, #5a49f8, #7a64f2);
+    background: linear-gradient(to right, #1166C0, #1166C0);
     line-height: 5px;
     border-radius: 0;
     position: relative;
@@ -1908,7 +1908,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
     opacity: 1;
 }
 .portfolio-content:before{
-    background: linear-gradient(to right, #5a49f8, #7a64f2);
+    background: linear-gradient(to right, #1166C0, #1166C0);
     content: "";
     width: 100%;
     height: 100%;
@@ -1988,7 +1988,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
     margin: 0 15px;
     cursor: pointer;
 }
-.portfolio-filter li.active{ color: #5a49f8; }
+.portfolio-filter li.active{ color: #1166C0; }
 
 /*========== Portfolio Section 02 ==========*/
 .agency .portfolio-section{}
@@ -2067,7 +2067,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
     z-index: 1;
 }
 .cta-section-2 .overlay{
-    background: linear-gradient(to right, #5a49f8, #7a64f2);
+    background: linear-gradient(to right, #1166C0, #1166C0);
     opacity: 0.8;
     width: 100%;
     height: 100%;
@@ -2187,7 +2187,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
 		left: 0;
 		right: 0;
 		bottom: 0;
-		background-color: #7a64f2;
+		background-color: #1166C0;
 		-webkit-transform: scaleX(0);
 		        transform: scaleX(0);
 		-webkit-transform-origin: 0 50%;
@@ -2330,7 +2330,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
 .corporate .team-item:hover .team-social li:nth-child(3){ transition-delay: 0.3s; }
 .corporate .team-item:hover .team-social li:nth-child(4){ transition-delay: 0.4s; }
 .corporate .team-social li a{
-    background: linear-gradient(to right, #5a49f8, #7a64f2);
+    background: linear-gradient(to right, #1166C0, #1166C0);
     width: 40px;
     height: 40px;
     line-height: 40px;
@@ -2431,7 +2431,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
 }
 .counter-content i {
     font-size: 40px;
-    color: #5a49f8;
+    color: #1166C0;
     margin-bottom: 10px;
 }
 .counter-content .counter-icon{
@@ -2440,7 +2440,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
     margin: 0 auto;
 }
 .counter-content .counter-icon:before{
-    background-color: #5a49f8;
+    background-color: #1166C0;
     content: "";
     width: 50px;
     height: 70px;
@@ -2497,7 +2497,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
     z-index: 1;
 }
 .faq-accordion [aria-expanded="true"]{
-    background-color: #5a49f8;
+    background-color: #1166C0;
     color: #fff!important;
     border-radius: 0;
 }
@@ -2563,7 +2563,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
     top: 0;
 }
 .faq-section .about-bg-holder .color-shape{
-    background: linear-gradient(to right, #5a49f8, #7a64f2);
+    background: linear-gradient(to right, #1166C0, #1166C0);
     width: 200px;
     height: 500px;
     position: absolute;
@@ -2630,7 +2630,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
     margin-bottom: 20px;
 }
 .contact-section .contact-details li i{
-    color: #5a49f8;
+    color: #1166C0;
     font-size: 15px;
     margin-right: 15px;
     width: 50px;
@@ -2638,10 +2638,10 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
     line-height: 50px;
     text-align: center;
     border-radius: 50%;
-    background-color: rgba(90, 73, 248,0.1);
+    background-color: rgba(17, 102, 192,0.1);
 }
 .contact-section .contact-form .form-control{
-    background-color: rgba(90, 73, 248,0.1);
+    background-color: rgba(17, 102, 192,0.1);
     height: 45px;
     border-radius: 2px;
     box-shadow: none;
@@ -2785,7 +2785,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
     position: relative;
 }
 .blog-item .blog-thumb .category{
-        background: linear-gradient(to right, #5a49f8, #7a64f2);
+        background: linear-gradient(to right, #1166C0, #1166C0);
     padding: 3px 15px;
     text-align: center;
     color: #fff;
@@ -2802,7 +2802,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
     cursor: pointer;
 }
 .blog-item .blog-thumb .category:hover{
-    background: linear-gradient(to right, #7a64f2, #5a49f8);
+    background: linear-gradient(to right, #1166C0, #1166C0);
 }
 .blog-item .blog-thumb .category a{
     color: #fff;
@@ -2828,10 +2828,10 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
     text-transform: uppercase;
     color: #46494c;
 }
-.post-meta .meta-list h4 a:hover{ color: #5a49f8; }
+.post-meta .meta-list h4 a:hover{ color: #1166C0; }
 .post-meta .meta-list h4 i{
     font-size: 15px;
-    color: #5a49f8;
+    color: #1166C0;
     margin-right: 5px;
 }
 .blog-content h3{
@@ -2878,14 +2878,14 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
     border-radius: 2px;
 }
 .pagination-wrap li a:hover{
-    background-color: #5a49f8;
+    background-color: #1166C0;
     color: #fff;
     opacity: 1;
     text-decoration: none;
 }
 .pagination-wrap li a.active{
-    background-color: #5a49f8;
-    border: 1px solid #5a49f8;
+    background-color: #1166C0;
+    border: 1px solid #1166C0;
     color: #fff;
 }
 
@@ -2900,7 +2900,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
     color: #051441;
 }
 .blog-single-content h2 a:hover{
-    color: #5a49f8;
+    color: #1166C0;
 }
 .single-post-meta{
     margin-bottom: 20px;
@@ -2911,7 +2911,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
 }
 .single-post-meta li i{
     font-size: 12px;
-    color: #5a49f8;
+    color: #1166C0;
     margin-right: 5px;
 }
 .single-post-meta li a{
@@ -2926,7 +2926,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
 blockquote{
     background-color: #f5f5f5;
     padding: 40px;
-    border-left: 4px solid #5a49f8;
+    border-left: 4px solid #1166C0;
     margin: 30px 0;
     position: relative;
     z-index: 1;
@@ -2960,7 +2960,7 @@ blockquote span{
 }
 .post-tags li a{
     display: inline-block;
-    background-color: #5a49f8;
+    background-color: #1166C0;
     padding: 5px 10px;
     border-radius: 2px;
     font-size: 12px;
@@ -2978,7 +2978,7 @@ blockquote span{
     align-items: center;
     padding: 30px;
     margin-top: 30px;
-    border-left: 4px solid #5a49f8;
+    border-left: 4px solid #1166C0;
 }
 .author-box img{
     width: 100px;
@@ -3003,7 +3003,7 @@ blockquote span{
     color: #051441;
 }
 .author-box .social-icon li a:hover{
-    color: #5a49f8;
+    color: #1166C0;
 }
 /*========== Post Navigation ==========*/
 .post-navigation {
@@ -3041,7 +3041,7 @@ blockquote span{
     margin-left: 10px;
 }
 .post-navigation .col a:hover{
-    color: #5a49f8;
+    color: #1166C0;
 }
 .post-navigation .col.prev-post .fa{
     margin-right: 10px;
@@ -3118,14 +3118,14 @@ blockquote span{
     font-family: "Work Sans", sans-serif;
     font-size: 12px;
     font-weight: 600;
-    color: #5a49f8;
+    color: #1166C0;
     display: inline-block;
     text-transform: uppercase;
     padding-left: 35px;
     position: relative;
 }
 .blog-single-wrap .comments-area .comment-reply-link:before{
-    background-color: #5a49f8;
+    background-color: #1166C0;
     position: absolute;
     content: "";
     width: 30px;
@@ -3158,7 +3158,7 @@ blockquote span{
 }
 .blog-single-wrap .comment-respond form input:focus,
 .blog-single-wrap .comment-respond form textarea:focus {
-    border-color: #5a49f8;
+    border-color: #1166C0;
 }
 .blog-single-wrap .comment-respond form textarea {
     height: auto;
@@ -3178,7 +3178,7 @@ blockquote span{
 .blog-single-wrap .comment-respond .form-submit input{
     font-family: "Work Sans", sans-serif;
     max-width: 180px;
-    background-color: #5a49f8;
+    background-color: #1166C0;
     color: #fff;
     font-weight: 600;
     font-size: 12px;
@@ -3290,7 +3290,7 @@ blockquote span{
 }
 .thumb-post .thumb-post-meta .date i{
     font-size: 12px;
-    color: #5a49f8;
+    color: #1166C0;
     margin-right: 10px;
 }
 
@@ -3316,7 +3316,7 @@ blockquote span{
 }
 .widget-content .tags li a{
     display: inline-block;
-    background-color: #5a49f8;
+    background-color: #1166C0;
     padding: 5px 10px;
     border-radius: 2px;
     font-size: 12px;
@@ -3342,7 +3342,7 @@ blockquote span{
     line-height: 1.9;
 }
 .widget-content ul li a:hover{
-    color: #5a49f8;
+    color: #1166C0;
 }
 
 .slogan
