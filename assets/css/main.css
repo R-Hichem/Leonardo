@@ -178,10 +178,21 @@ ul{
 }
 p, li, a, span{}
 p{
-    font-size: 15px;
+    font-size: 17px;
     line-height: 28px;
     margin-bottom: 20px;
+	/* margin-left: 150px; */
+    /* margin-right: 150px; */
 }
+
+
+.section-heading-small
+{
+	margin-left: 150px;
+    margin-right: 150px;
+}
+
+
 a, a:hover{
     text-decoration: none;
 }
@@ -237,7 +248,11 @@ button{
 
 /* ======= Helper Class ======= */
 .padding{
-    padding: 100px 0;
+    padding: 50px 0;
+}
+
+.small-padding{
+    padding: 20px 0;
 }
 .no-padding{
     padding: 0;
@@ -722,11 +737,11 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
     right: -40px;
 }
 .about-bg-holder .bg-back{
-    background-image: url("../img/teamimage.PNG");
+    background-image: url("../img/where.jpg");
     background-repeat: no-repeat;
     background-position: left top;
     background-size: contain;
-    width: 50%;
+    width: 100%;
     height: 100%;
     position: absolute;
     left: 0;
@@ -1088,6 +1103,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
     position: relative;
     overflow: hidden;
     z-index: 1;
+	text-align: center;
 }
 .service-item:hover{
     box-shadow: 0px 15px 20px 0px rgba(209, 218, 235, 0.50);
@@ -1162,6 +1178,100 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
     z-index: -1;
 }
 .service-item:hover .dir-overlay{
+    visibility: visible;
+    opacity: 1;
+    -webkit-box-shadow: 6px 60px 45px 0 rgba(0,0,0,.1);
+    box-shadow: 6px 60px 45px 0 rgba(0,0,0,.1);
+}
+
+
+
+
+/*======================================================
+    3.0 Service2 Section
+=======================================================*/
+.service2-section{}
+.service2-item{
+    background-color: #fff;
+    padding: 40px 30px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+	text-align: center;
+}
+.service2-item:hover{
+    box-shadow: 0px 15px 20px 0px rgba(209, 218, 235, 0.50);
+}
+.service2-item:hover .read-more,
+.service2-item:hover p,
+.service2-item:hover h3{
+    color: #fff;
+}
+.service2-item:hover .service2-icon{
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.service2-item:hover .service2-icon:before{
+    background-color: #fff;
+    opacity: 0.1;
+}
+.service2-item .service2-icon{
+    font-size: 60px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#5a49f8), to(#7a64f2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+.service2-item .service2-icon:before{
+    background-color: #5a49f8;
+    content: "";
+    width: 50px;
+    height: 70px;
+    position: absolute;
+    left: 10px;
+    top: 0;
+    opacity: 0.1;
+    clip-path: polygon(0% 0, 100% 10%, 100% 90%, 0% 100%);
+    transform: rotate(-30deg);
+    z-index: -1;
+}
+.read-more{
+    color: #46494c;
+    font-family: "Work Sans",sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+.read-more i{
+    font-size: 25px;
+    margin-left: 10px;
+    margin-bottom: 3px;
+    transition: all 0.3s ease-in-out;
+}
+.read-more:hover{ color: #5a49f8; }
+.read-more:hover i{ transform: translateX(5px); }
+.dir-overlay{
+    background: -webkit-gradient(linear, left top, left bottom, from(#5a49f8), to(#7a64f2));
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+}
+.service2-item:hover .dir-overlay{
     visibility: visible;
     opacity: 1;
     -webkit-box-shadow: 6px 60px 45px 0 rgba(0,0,0,.1);
@@ -3234,3 +3344,15 @@ blockquote span{
 .widget-content ul li a:hover{
     color: #5a49f8;
 }
+
+.slogan
+{
+	font-weight: bold;
+	font-style: italic;
+}
+
+#slogan
+{
+	font-weight: bold;
+}
+

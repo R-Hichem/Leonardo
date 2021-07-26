@@ -145,6 +145,59 @@
     margin: 0;
 }
 
+
+
+
+
+
+
+
+.widget-links2 {}
+
+.widget-links2 li {
+    display: inline;
+    align-items: center;
+}
+
+.widget-links2 li:not(:last-of-type) {
+    margin-bottom: 15px;
+}
+
+.widget-links2 li i {
+    font-size: 6px;
+    color: #5a49f8;
+    margin-right: 10px;
+    margin-top: 2px;
+}
+
+.widget-links2 li a {
+    font-family: 'Sofia-Pro-Regular', sans-serif;
+    color: #6a7c92;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.widget-links2 li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.widget-links2.address {}
+
+.widget-links2.address li {
+    font-size: 16px;
+}
+
+.widget-links2.address li i {
+    font-size: 30px;
+}
+
+.widget-links2.address li:last-of-type {
+    margin: 0;
+}
+
+
+
 /*======================================================
     Subscribe Form
 =======================================================*/
