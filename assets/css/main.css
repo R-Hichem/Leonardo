@@ -3356,3 +3356,15 @@ blockquote span{
 	font-weight: bold;
 }
 
+.description_Text{
+    transition: all 1s;
+    display: none;
+}
+
+.myVisible{
+    display: block;
+}
+
+#menuActive{
+    color: #5a49f8;
+}
