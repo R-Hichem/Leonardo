@@ -28,9 +28,9 @@
         <link rel="stylesheet" href="assets/css/slider.css">
         <link rel="stylesheet" href="assets/css/header.css">
         <link rel="stylesheet" href="assets/css/footer.css">
-        <link rel="stylesheet" href="assets/css/main.css">
         <link rel="stylesheet" href="assets/css/responsive.css">
         <link rel="stylesheet" href="assets/css/pricing-table.css">
+        <link rel="stylesheet" href="assets/css/main.css">
         <style>
             .pricing-list{
                 padding: 30px;
@@ -77,7 +77,7 @@
                 </div>
             </div><!-- /.top-bar -->
             <div class="primary-header-one primary-header">
-                <div class="container" id="section1">
+                <div class="container" id="section1" style="max-width: 1300px; padding-top: 10px;">
                     <div class="primary-header-inner">
                         <div class="header-logo">
                             <a href="index.html">
@@ -86,6 +86,20 @@
                         </div><!-- /.header-logo -->
                         <div class="header-menu-wrap">
                             <ul class="dl-menu">
+                                <li >
+                                    <div class="langRow myHidden" id="responsiveLang">
+
+                                        <a href="#">
+                                            <img src="assets/img/france.png" alt="thumb" width="32"  > &nbsp;
+                                        </a>
+                                        <a href="#">
+                                            <img src="assets/img/united-kingdom.png" alt="thumb" width="32"  > &nbsp;
+                                        </a>
+                                        <a href="#">
+                                            <img src="assets/img/netherlands.png" alt="thumb" width="32"  > &nbsp;
+                                        </a>
+                                    </div>
+                                </li>
                                 <li><a href="index.html">Home</a></li>
                                 <li><a href="leonardo_the_tool.html">Leonardo The Tool</a></li>
                                 <li><a href="OurSolutions.html">Our Solutions</a></li>
@@ -125,13 +139,16 @@
                                     </ul>
                                 </li> -->
                                 <li><a href="contact.html">Contact Us</a></li>
+                               
                             </ul>
                         </div><!-- /.header-menu-wrap -->
                         <div class="header-right">
                             <!-- <div class="search-icon dl-search-icon"><i class="las la-search"></i></div> -->
-							<img src="assets/img/france.png" alt="thumb" width="32" > &nbsp;
-							<img src="assets/img/united-kingdom.png" alt="thumb" width="32" > &nbsp;
-							<img src="assets/img/netherlands.png" alt="thumb" width="32" > &nbsp;
+                            <div class="langRow" id="responsiveLangReverse">
+                                <img src="assets/img/france.png" alt="thumb" width="32" > &nbsp;
+                                <img src="assets/img/united-kingdom.png" alt="thumb" width="32" > &nbsp;
+                                <img src="assets/img/netherlands.png" alt="thumb" width="32" > &nbsp;
+                            </div>
                             <a class="header-btn" href="how-it-works.html">Discovery call<span></span></a>
                             <!-- Burger menu -->
                             <div class="mobile-menu-icon">
@@ -158,34 +175,21 @@
 
         <section class="sponsor-section custom-padding">
             <div class="container">
+                <h3 style="text-align: center;">Some of the organisations that hvae used and/or are using Leonardo3.4.5</h2>
+                <!-- copie tout ceci -->
                 <div class="row logoRow">
-                    <div class="col-md-4 logoCol">
+                    <div class="col-md-4 logoCol wow fadeInLeft" data-wow-delay="200ms">
                         <img src="assets/img/logos/logo_ubs.png" alt="USB">
                     </div>
-                    <div class="col-md-8 logoDescription">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum tempora soluta sequi dignissimos officia pariatur nesciunt, quibusdam, maxime excepturi deserunt maiores fugit vero in culpa voluptates ut, animi non facilis.
-                    </div>
-                </div>
-
-                <div class="row logoRow">
-                    <div class="col-md-4 logoCol">
+                    <div class="col-md-4 logoCol wow fadeIn" data-wow-delay="200ms">
                         <img src="assets/img/logos/logo galvalux.png" alt="USB">
                     </div>
-                    <div class="col-md-8 logoDescription">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum tempora soluta sequi dignissimos officia pariatur nesciunt, quibusdam, maxime excepturi deserunt maiores fugit vero in culpa voluptates ut, animi non facilis.
-                    </div>
-                    
-                </div>
-
-                <div class="row logoRow">
-                    <div class="col-md-4 logoCol logoDescription">
+                    <div class="col-md-4 logoCol wow fadeInRight" data-wow-delay="200ms">
                         <img src="assets/img/logos/logo hes.jpeg" alt="USB">
                     </div>
-                    <div class="col-md-8">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum tempora soluta sequi dignissimos officia pariatur nesciunt, quibusdam, maxime excepturi deserunt maiores fugit vero in culpa voluptates ut, animi non facilis.
-                    </div>
-                    
                 </div>
+                <!-- jusqu'a là puis rajoute les images -->
+
             </div>
         </section>
 

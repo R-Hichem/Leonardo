@@ -3365,6 +3365,9 @@ blockquote span{
     display: block;
 }
 
+
+
+
 #menuActive{
     color: #1166C0;
 }
@@ -3377,8 +3380,15 @@ blockquote span{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 30px;
 }
 
-.logoDescription{
-    text-align: justify;
+
+.myHidden{
+    display: none !important;
+}
+
+.langRow{
+    display: flex; justify-content: space-around; padding: 10px;
+    align-items: center;
 }

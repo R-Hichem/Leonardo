@@ -88,7 +88,20 @@
         $(window).on("resize", function () {
             responsiveClasses();
             transparentHeader();
+            toggleLanguageRow();
         }).resize();
+
+        function toggleLanguageRow(){
+            if ($(window).width() >= 992) {
+                $('#responsiveLang').addClass('myHidden')
+                $('#responsiveLangReverse').removeClass('myHidden')
+
+            }else{
+                $('#responsiveLang').removeClass('myHidden')
+                $('#responsiveLangReverse').addClass('myHidden')
+
+            }
+        }
 
         /* ========== Popup Search Box ========== */
         $(function () {
