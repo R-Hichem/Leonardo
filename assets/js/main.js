@@ -221,8 +221,6 @@
                 if ($(this).data('name')) {
                     let name = $(this).data('name')
                     let position = $(this).data('position')
-                   
-                    console.log($(window).width())
                     if($(window).width() >= 992) {
                         $('.team-info').html('<span class="name reveal-text-2">' + $(this).data('name') + '</span>' + '<span class="position reveal-text-2">' + $(this).data('position') + '</span>');
 
@@ -244,6 +242,12 @@
                                         </p>
                                         `)
                         $('.description_Text').addClass('myVisible')
+                        $(document).on('mousemove', function(e) {
+                            $('.team-info').css({
+                                left: e.clientX - 10,
+                                top: e.clientY + 25
+                            });
+                        });
                     }else{
                         $('.team-info').html(`
                         <span class="name reveal-text-2"> ${$(this).data('name')} | ${$(this).data('position')}</span>
@@ -263,17 +267,19 @@
                             that teams and organizations often face.
                         </div>
                         `);
+                        $(document).on('mousemove', function(e) {
+                            console.log($(this))
+                            $('.team-info').css({
+                                left: e.clientX - 10,
+                                top: e.clientY + 25
+                            });
+                        });
                     }
 
                     $('.team-info').addClass('visible');
                 }
 
-                $(document).on('mousemove', function(e) {
-                    $('.team-info').css({
-                        left: e.clientX - 10,
-                        top: e.clientY + 25
-                    });
-                });
+                
             }).on('mouseleave', function() {
                 $('.team-info').removeClass('visible');
                 $('.description_Text').removeClass('myVisible')
