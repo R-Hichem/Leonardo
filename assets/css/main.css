@@ -3368,3 +3368,17 @@ blockquote span{
 #menuActive{
     color: #1166C0;
 }
+
+.logoRow{
+    padding: 50px;
+}
+
+.logoCol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoDescription{
+    text-align: justify;
+}
