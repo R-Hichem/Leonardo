@@ -3368,3 +3368,100 @@ blockquote span{
 #menuActive{
     color: #1166C0;
 }
+
+.section-title {
+    margin-bottom: 40px;
+}
+.accordion-style .card-header {
+    background: transparent;
+    border-bottom: none;
+}
+.accordion-style .accordion-content {
+    border-top: 1px solid #eeeeee;
+}
+
+.accordion-content {
+    transition: all 1s;
+}
+
+.accordion-style .accordion-title .btn {
+    display: block;
+    font-size: 16px;
+    padding: 0px;
+    text-decoration: none;
+    width: 100%;
+    text-align: left;
+}
+
+.section-title .title {
+    padding-bottom: 15px;
+    margin-bottom: 0;
+    position: relative;
+    letter-spacing: -0.5px;
+    display: inline-block;
+}
+.section-title {
+    margin-bottom: 40px;
+}
+
+/* Section Title */
+.section-title {
+    margin-bottom: 40px; }
+    .section-title h2 {
+      margin-bottom: 0px; }
+    .section-title .title {
+      padding-bottom: 15px;
+      margin-bottom: 0;
+      position: relative;
+      letter-spacing: -0.5px;
+      display: inline-block; }
+      .section-title .title span:before {
+        position: absolute;
+        content: "";
+        height: 10px;
+        width: 10px;
+        background: #1166C0;
+        bottom: -4px;
+        left: 20%;
+        z-index: 1;
+        -webkit-transform: translate(-50%, 0%);
+                transform: translate(-50%, 0%); }
+      .section-title .title span:after {
+        border-bottom: 2px solid #1166C0;
+        content: "";
+        display: inline-block;
+        width: 20%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 1; }
+      .section-title .title:after {
+        content: "";
+        width: 100%;
+        border-bottom: 2px solid #eeeeee;
+        display: inline-block;
+        position: absolute;
+        bottom: 0;
+        left: 0; }
+    .section-title p {
+      margin-top: 20px;
+      margin-bottom: 0px;
+      font-size: 16px; }
+  
+  .section-title.center {
+    text-align: center; }
+    .section-title.center .title span:before {
+      left: 50%;
+      -webkit-transform: translate(-50%, 0%);
+              transform: translate(-50%, 0%); }
+    .section-title.center .title span:after {
+      left: 50%;
+      -webkit-transform: translate(-50%, 0%);
+              transform: translate(-50%, 0%);
+      width: 25%; }
+
+      .accordion-style .card {
+        border: 1px solid #eeeeee;
+        margin-bottom: 10px;
+        border-radius: 0px;
+    }
