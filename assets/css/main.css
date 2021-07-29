@@ -424,7 +424,7 @@ button{
 /* ======= Section Heading ======= */
 .section-heading h2{
     font-family: "Sofia-Pro-Bold";
-    font-size: 42px;
+    font-size: 40px;
     line-height: 50px;
     display: block;
 }
@@ -3365,9 +3365,34 @@ blockquote span{
     display: block;
 }
 
+
+
+
 #menuActive{
     color: #1166C0;
 }
+
+.logoRow{
+    padding: 50px;
+}
+
+.logoCol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+
+.myHidden{
+    display: none !important;
+}
+
+.langRow{
+    display: flex; justify-content: space-around; padding: 10px;
+    align-items: center;
+}
+
 
 .section-title {
     margin-bottom: 40px;
