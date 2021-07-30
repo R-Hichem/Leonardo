@@ -58,7 +58,7 @@
     font-size: 52px;
     line-height: 52px;
     color: rgb(255, 255, 255);
-    letter-spacing: -1.3px;
+    /* letter-spacing: -1.3px; */
     min-height: 50px;
 }
 .main-slider .slide-caption.big .inner-layer{
@@ -283,4 +283,5 @@
 
 .slider-content {
     margin-left: 184px;
+    margin-top: 62px;
 }

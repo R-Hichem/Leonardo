@@ -2840,7 +2840,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
     Page Header
 =======================================================*/
 .page-header{
-    background-image: url(https://via.placeholder.com/1600x1100.png?text=Placeholder+Image);
+    background-image: url(../img/atomium.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -3489,12 +3489,16 @@ blockquote span{
     align-items: center;
 }
 
+.brightness-image
+{
+    filter: brightness(60%);
+    -webkit-filter: brightness(60%);
+}
 
-
-
-
-
-
+.slick-dots
+{
+    display:none;
+}
 
 
 
