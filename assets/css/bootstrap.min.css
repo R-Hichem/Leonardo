@@ -8897,7 +8897,7 @@ button.bg-dark:hover {
 
 .ml-auto,
 .mx-auto {
-	margin-left: auto!important
+	/* margin-left: auto!important */
 }
 
 @media (min-width:576px) {
