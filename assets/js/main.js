@@ -255,14 +255,8 @@
                 $('.description_Text').removeClass('myVisible')
                 let name = $(this).data('name')
                 let position = $(this).data('position')
-                let description = 
-                `The <b>Leonardo 3.4.5</b> tool generates
-                a profile for an individual in terms of
-                their preferences at work.
-                It identifies potential and talents
-                and combines them with
-                the challenges in terms of group dynamics and efficiency
-                that teams and organizations often face.`;
+                let description = $(this).data('content')
+                let src = $(this).data('image')
                 // if($(window).width() >= 992) {
                 //     $('.description_Text').html(`
                 //     <p>
@@ -275,6 +269,7 @@
                 // }else{
                     $('#modalTitlePosition').html(name+" | "+position);
                     $('#modalDescription').html(description);
+                    $('#modalImage').attr('src', src);
                 // }
 
             });
