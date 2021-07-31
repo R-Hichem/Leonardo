@@ -232,70 +232,50 @@
         $('.team-items .team-item').each(function() {
             $(this).on('mouseenter', function() {
                 if ($(this).data('name')) {
-                    let name = $(this).data('name')
-                    let position = $(this).data('position')
-                    if($(window).width() >= 992) {
-                        $('.team-info').html('<span class="name reveal-text-2">' + $(this).data('name') + '</span>' + '<span class="position reveal-text-2">' + $(this).data('position') + '</span>');
-
-                        $('.description_Text').html(`
-                        <p>
-                        <h3>${name}</h3>
-                        <h4>${position}</h4>
-                        <p>
-                        The <b>Leonardo 3.4.5</b> tool generates
-                        a profile for an individual in terms of
-                        their preferences at work.
-                        It identifies potential and talents
-                        and combines them with
-                        the challenges in terms of group dynamics and efficiency
-                        that teams and organizations often face.
-                        
-                        
-                                        </p>
-                                        </p>
-                                        `)
-                        $('.description_Text').addClass('myVisible')
-                        $(document).on('mousemove', function(e) {
-                            $('.team-info').css({
-                                left: e.clientX - 10,
-                                top: e.clientY + 25
-                            });
+                if($(window).width() >= 992) {
+                    
+                    $('.team-info').html('<span class="name reveal-text-2">' + $(this).data('name') + '</span>' + '<span class="position reveal-text-2">' + $(this).data('position') + '</span>');
+                    
+                    $(document).on('mousemove', function(e) {
+                        $('.team-info').css({
+                            left: e.clientX - 10,
+                            top: e.clientY + 25
                         });
-                    }else{
-                        $('.team-info').html(`
-                        <span class="name reveal-text-2"> ${$(this).data('name')} | ${$(this).data('position')}</span>
-                        <div class="position reveal-text-2">
-                            The <b>Leonardo 3.4.5</b> tool generates
-                            <br>
-                            a profile for an individual in terms of
-                            <br>
-                            their preferences at work.
-                            <br>
-                            It identifies potential and talents
-                            <br>
-                            and combines them with
-                            <br>
-                            the challenges in terms of group dynamics and efficiency
-                            <br>
-                            that teams and organizations often face.
-                        </div>
-                        `);
-                        $(document).on('mousemove', function(e) {
-                            console.log($(this))
-                            $('.team-info').css({
-                                left: e.clientX - 10,
-                                top: e.clientY + 25
-                            });
-                        });
-                    }
-
+                    });
                     $('.team-info').addClass('visible');
+                }
                 }
 
                 
             }).on('mouseleave', function() {
                 $('.team-info').removeClass('visible');
+            }).on('click', function(){
+                
                 $('.description_Text').removeClass('myVisible')
+                let name = $(this).data('name')
+                let position = $(this).data('position')
+                let description = 
+                `The <b>Leonardo 3.4.5</b> tool generates
+                a profile for an individual in terms of
+                their preferences at work.
+                It identifies potential and talents
+                and combines them with
+                the challenges in terms of group dynamics and efficiency
+                that teams and organizations often face.`;
+                // if($(window).width() >= 992) {
+                //     $('.description_Text').html(`
+                //     <p>
+                //         <h3>${name}</h3>
+                //         <h4>${position}</h4>
+                //         <p>${description}</p>
+                //     </p>
+                //                     `)
+                //     $('.description_Text').addClass('myVisible')
+                // }else{
+                    $('#modalTitlePosition').html(name+" | "+position);
+                    $('#modalDescription').html(description);
+                // }
+
             });
         });
 

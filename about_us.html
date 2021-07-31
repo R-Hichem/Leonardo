@@ -225,28 +225,28 @@
             <div class="container">
                 <div class="row team-items">
                    <div class="team-info"></div>
-                    <div class="col-lg-3 col-sm-6 sm-padding wow fadeInUp" data-wow-delay="200ms">
+                    <div class="col-lg-3 col-sm-6 sm-padding wow fadeInUp"  data-toggle="modal" data-target="#exampleModal" data-wow-delay="200ms">
                         <div class="team-item" data-name="Jonathan Smith" data-position="Designer">
                             <div class="team-thumb">
                                 <figure><img src="assets/img/julie.png" alt="thumb"></figure>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6 sm-padding wow fadeInUp" data-wow-delay="300ms">
+                    <div class="col-lg-3 col-sm-6 sm-padding wow fadeInUp"  data-toggle="modal" data-target="#exampleModal" data-wow-delay="300ms">
                         <div class="team-item" data-name="Melania Sandiego" data-position="Developer">
                             <div class="team-thumb">
                                 <figure><img src="assets/img/yves.png" alt="thumb"></figure>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6 sm-padding wow fadeInUp" data-wow-delay="400ms">
+                    <div class="col-lg-3 col-sm-6 sm-padding wow fadeInUp"  data-toggle="modal" data-target="#exampleModal" data-wow-delay="400ms">
                         <div class="team-item" data-name="Shalmali kholgade" data-position="Marketer">
                             <div class="team-thumb">
                                 <figure><img src="assets/img/julie.png" alt="thumb"></figure>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6 sm-padding wow fadeInUp" data-wow-delay="500ms">
+                    <div class="col-lg-3 col-sm-6 sm-padding wow fadeInUp"  data-toggle="modal" data-target="#exampleModal" data-wow-delay="500ms">
                         <div class="team-item" data-name="Fiorella Ibáñez" data-position="Writter">
                             <div class="team-thumb">
                                 <figure><img src="assets/img/julie.png" alt="thumb"></figure>
@@ -260,6 +260,33 @@
                         
                     </div>
                 </div>
+
+                <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog .modal-dialog-centered " role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                            <div>
+                                <span class="name reveal-text-2" id="modalTitlePosition"></span>
+                            </div>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body" style="display: flex; justify-content: center;">
+                            <div class="team-thumb reveal-text-2">
+                                <figure><img src="assets/img/julie.png" alt="thumb" style="width: 350px;"></figure>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                          <div>
+                              <p id="modalDescription" class="reveal-text-2">
+                              </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              
             </div>
         </section><!--/. team-section -->
         

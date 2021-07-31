@@ -3490,3 +3490,15 @@ blockquote span{
         margin-bottom: 10px;
         border-radius: 0px;
     }
+
+   .team-thumb{
+       cursor: pointer;
+   }
+
+    .myLinks li{
+        align-items: baseline !important;
+    }
+    
+    .myLinks li i{
+        font-size: 8px !important;
+    }
