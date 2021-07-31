@@ -737,7 +737,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
     right: -40px;
 }
 .about-bg-holder .bg-back{
-    background-image: url("../img/where.jpg");
+    background-image: url("../img/sol.png");
     background-repeat: no-repeat;
     background-position: left top;
     background-size: contain;
@@ -747,6 +747,102 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
     left: 0;
     top: 0;
 }
+
+.about-bg-holder2 .bg-back{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+
+.about-bg-holder3 .bg-back{
+    background-image: url("../img/crystal.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+
+.about-bg-holder4 .bg-back{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.about-bg-holder5 .bg-back{
+    background-image: url("../img/personal.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.about-bg-holder6 .bg-back{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+
+.about-bg-holder7 .bg-back{
+    background-image: url("../img/Brainstorm.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+
+
+.about-bg-holder8 .bg-back{
+    background-image: url("../img/web.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
 .about-bg-holder .bg-front{
     background-image: url("../img/dreamstime_xxl_4033335.jpg");
     background-repeat: no-repeat;
@@ -2744,7 +2840,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
     Page Header
 =======================================================*/
 .page-header{
-    background-image: url(https://via.placeholder.com/1600x1100.png?text=Placeholder+Image);
+    background-image: url(../img/atomium.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -3393,6 +3489,89 @@ blockquote span{
     align-items: center;
 }
 
+.brightness-image
+{
+    filter: brightness(60%);
+    -webkit-filter: brightness(60%);
+}
+
+.slick-dots
+{
+    display:none;
+}
+
+
+
+.content {
+    width:100%;
+    margin:0;
+  }
+  .content h1{
+    font-size:45px;
+    text-align:left;
+  }
+  #accordion h4{
+    margin:5px 0 0;
+    padding:15px;
+    font-size:20px;
+    font-weight:normal;
+    text-align:left;
+    color:#fff;
+    background:#8ECAE8;
+    outline: 0;
+    cursor:pointer;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+  }
+  
+  #accordion h4:hover {
+    
+    background:#555;
+    content: "\2191";
+  }
+  
+  #accordion div {
+    position:relative;
+    margin:0 0 0;
+    padding:15px;
+    color:#fff;
+    background:transparent;
+    display: block;
+    color:#000;
+    
+  }
+  
+  #accordion div:after {
+  position: absolute;
+  top: -27px;
+  right: 7%;
+  display: block;
+  width: 0;
+  height: 0;
+  margin-left: -20px;
+  border-width: 15px;
+  border-style: solid;
+  border-color: transparent transparent  rgb(255,255,255)  transparent;
+  z-index:1;
+  content: '';
+  }
+
+
+  .sub_title
+  {
+    margin: 0 0 10px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #1166C0;
+    letter-spacing: -0.5px;
+    font-size: 20px;
+  }
+
+
+  .widget-links li a:hover
+  {
+        color:#1166C0;
+  }
 
 .section-title {
     margin-bottom: 40px;

@@ -232,6 +232,7 @@
         $('.team-items .team-item').each(function() {
             $(this).on('mouseenter', function() {
                 if ($(this).data('name')) {
+
                 if($(window).width() >= 992) {
                     
                     $('.team-info').html('<span class="name reveal-text-2">' + $(this).data('name') + '</span>' + '<span class="position reveal-text-2">' + $(this).data('position') + '</span>');
