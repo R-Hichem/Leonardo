@@ -232,70 +232,51 @@
         $('.team-items .team-item').each(function() {
             $(this).on('mouseenter', function() {
                 if ($(this).data('name')) {
-                    let name = $(this).data('name')
-                    let position = $(this).data('position')
-                    if($(window).width() >= 992) {
-                        $('.team-info').html('<span class="name reveal-text-2">' + $(this).data('name') + '</span>' + '<span class="position reveal-text-2">' + $(this).data('position') + '</span>');
 
-                        $('.description_Text').html(`
-                        <p>
-                        <h3>${name}</h3>
-                        <h4>${position}</h4>
-                        <p>
-                        Julie is a Wellbeing Consultant, Leonardo3-4-5 facilitator, Spa Educator, registered nutritional therapist and qualified holistic therapist specialising in anti-stress modalities. She has more than 30 years of experience in the design and delivery of training programmes across a broad spectrum of topics.  Her particular field of interest is related to wellness in the workplace, lifestyle and healthy aging. In addition to running her own private practice she has provided specialist consultancy services to international skin care and lifestyle brands, hotels, spas, beauty salons and companies looking to bring more wellness into the workplace.
-                        She is really passionate about education and has a great interest in human behaviour and the power of educating people in self-awareness and effective communication, helping them to realise their potential.  She is regarded as an accomplished facilitator/mediator.
-                        She is committed daily to working on innovative ways to stimulate and help those she works with to discover new ways of working and takes great delight in watching them open and grow.
-                        Her 30+ years of professional experience in working and motivating people in diverse sectors and multi-cultural environments enables her to look at things from different perspectives to offer creative solutions and enriching learning opportunities.
-                        She prides herself on being able to develop long-lasting and meaningful relationships with those she works with, supporting them with specially tailored programmes to meet their needs.  In addition to this she enjoys the opportunity to build new relationships whilst learning about their business needs and strategies.  This allows her not only to offer training but also to help with business solutions.
-                        She is a strong advocate of Continuing Professional Development and to this end constantly keeps herself updated in all areas related to workplace wellbeing, lifestyle aging, diet, exercise, supplementation, stress management, mental health.  She chose these particular areas of specialisation as she believes that to be truly well in all aspects of one’s life you need to have an integrated approach and therefore a better understanding of the human mind/body connection and the effects of lifestyle choices and external factors have on our health and wellbeing.
-                        
-                        
-                        
-                                        </p>
-                                        </p>
-                                        `)
-                        $('.description_Text').addClass('myVisible')
-                        $(document).on('mousemove', function(e) {
-                            $('.team-info').css({
-                                left: e.clientX - 10,
-                                top: e.clientY + 25
-                            });
+                if($(window).width() >= 992) {
+                    
+                    $('.team-info').html('<span class="name reveal-text-2">' + $(this).data('name') + '</span>' + '<span class="position reveal-text-2">' + $(this).data('position') + '</span>');
+                    
+                    $(document).on('mousemove', function(e) {
+                        $('.team-info').css({
+                            left: e.clientX - 10,
+                            top: e.clientY + 25
                         });
-                    }else{
-                        $('.team-info').html(`
-                        <span class="name reveal-text-2"> ${$(this).data('name')} | ${$(this).data('position')}</span>
-                        <div class="position reveal-text-2">
-                        Yves Miserez is an energetic and influential leadership coach and leadership development expert.
-
-                        With over 20 years of experience in group facilitation, Yves has contributed to the personal and professional growth of thousands of professionals.
-                        
-                        Benefitting from his background in operational and quality management, Yves has led change management projects in over 15 countries. He is passionate about helping individuals and groups, both online and offline, to lead teams and effectively communicate with different kinds of stakeholders. He is certified in the LP³-leadership development model, strategic roll-out and is also a certified trainer and coach in the Leonardo3-4-5 model
-                        
-                        Yves is appreciated for his balance between the ‘head, heart and hands’ approach when bringing the message across. As a Positive Leadership and Accelerated Learning certified practitioner, he challenges the status quo.
-                        
-                        He is also a ‘boots in the mud’ change management consultant, aiming for operational excellence. He does so by aligning the C-Suite objectives with the day-to-day operational activities.
-                        
-                        Yves works with large, medium size organizations and SMEs and has expertise in the (financial) services, industry and government sectors.
-                        
-                        Yves working languages are Dutch, French and English.
-                        </div>
-                        `);
-                        $(document).on('mousemove', function(e) {
-                            console.log($(this))
-                            $('.team-info').css({
-                                left: e.clientX - 10,
-                                top: e.clientY + 25
-                            });
-                        });
-                    }
-
+                    });
                     $('.team-info').addClass('visible');
+                }
                 }
 
                 
             }).on('mouseleave', function() {
                 $('.team-info').removeClass('visible');
+            }).on('click', function(){
+                
                 $('.description_Text').removeClass('myVisible')
+                let name = $(this).data('name')
+                let position = $(this).data('position')
+                let description = 
+                `The <b>Leonardo 3.4.5</b> tool generates
+                a profile for an individual in terms of
+                their preferences at work.
+                It identifies potential and talents
+                and combines them with
+                the challenges in terms of group dynamics and efficiency
+                that teams and organizations often face.`;
+                // if($(window).width() >= 992) {
+                //     $('.description_Text').html(`
+                //     <p>
+                //         <h3>${name}</h3>
+                //         <h4>${position}</h4>
+                //         <p>${description}</p>
+                //     </p>
+                //                     `)
+                //     $('.description_Text').addClass('myVisible')
+                // }else{
+                    $('#modalTitlePosition').html(name+" | "+position);
+                    $('#modalDescription').html(description);
+                // }
+
             });
         });
 
